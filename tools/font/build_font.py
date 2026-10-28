@@ -22,8 +22,8 @@ ASC, DESC, GAP = 800, 200, 200
 VERSION = "1.000"
 FAMILY = "Guild"
 COPYRIGHT = "Copyright 2026 The Commonweal contributors"
-LICENSE = "This Font Software is licensed under the SIL Open Font License, Version 1.1. See OFL.txt."
-LICENSE_URL = "https://openfontlicense.org"
+LICENSE = "Commonweal License 1.0: GNU General Public License, version 3 only. See LICENSE at the repository root."
+LICENSE_URL = "https://www.gnu.org/licenses/gpl-3.0.html"
 DESCRIPTION = ("Guild, the typeface of Commonweal, the system of the common good. Named for the guilds: "
                "good work, honest craft and shared standards.")
 

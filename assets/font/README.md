@@ -36,5 +36,6 @@ font always match.
 
 ## Licence
 
-Guild is free software under the [SIL Open Font License 1.1](OFL.txt), with no reserved font name. Use it,
-change it, share it.
+Guild’s original sources and future regenerated fonts use the [Commonweal License 1.0](../../LICENSE), whose legal terms are GPLv3 only.
+Existing font files retain their [SIL Open Font License 1.1](OFL.txt) permissions, with no reserved font
+name. See [LICENSING.md](../../LICENSING.md) for the repository-wide scope and earlier grants.

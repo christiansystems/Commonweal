@@ -56,5 +56,5 @@ analysis and rendered with its BeepBox synth. The score is code in
 ## Licence
 
 *Commonweal: Music for the Common Good* by the Commonweal contributors is shared under
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Play it, remix it, share it, and credit
-Commonweal. Vigil Box is built on BeepBox by John Nesky (MIT) and uses lamejs (LGPL) for MP3 encoding.
+[Commonweal License 1.0](../../LICENSE). Play it, remix it, share it, and credit Commonweal under its
+terms. Existing CC BY-SA 4.0 grants and embedded notices remain valid; see [LICENSING.md](../../LICENSING.md). Vigil Box is built on BeepBox by John Nesky (MIT) and uses lamejs (LGPL) for MP3 encoding.

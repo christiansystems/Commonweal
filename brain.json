@@ -40,5 +40,7 @@
     "avatar": "assets/logo/commonweal-avatar-1024.png",
     "font": "assets/font",
     "soundtrack": "assets/music/album.json"
-  }
+  },
+  "license_name": "Commonweal License 1.0",
+  "license_file": "LICENSE"
 }

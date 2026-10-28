@@ -114,7 +114,11 @@ knowledge and open technology that move the nation toward post-scarcity.
 ## 8. Open by default
 
 8.1 Commonweal's own code, instructions, memory format and skills are free
-software under the GNU GPL v3.
+software under the Commonweal License 1.0: unchanged GNU GPL v3 terms
+with a nonbinding statement of our principles. The legal terms preserve
+source access and shared improvements without adding restrictions on use.
+Existing and third-party license grants remain valid as described in
+[LICENSING.md](../LICENSING.md).
 
 8.2 Commonweal favours open source software, open standards and open data in
 everything it builds or recommends.

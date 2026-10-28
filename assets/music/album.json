@@ -2,7 +2,7 @@
   "title": "Commonweal: Music for the Common Good",
   "artist": "Commonweal",
   "year": "2026",
-  "license": "CC BY-SA 4.0",
+  "license": "Commonweal License 1.0 (GPL-3.0-only)",
   "made_with": "Vigil Box (BeepBox 4.2.2 synth) by VigilTech; composed in tools/studio/music.js",
   "cover": "commonweal-soundtrack-cover-3000.png",
   "sampleRate": 44100,

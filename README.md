@@ -28,6 +28,7 @@ emblem, the Guild typeface and an eight-track soundtrack, made with Vigil Sprite
 - [architecture/viable-system-model.md](architecture/viable-system-model.md): how it is designed
 - [architecture/railway.md](architecture/railway.md): how it will run on Railway
 - [governance/amendments.md](governance/amendments.md): how to change it
+- [LICENSING.md](LICENSING.md): the Commonweal License, its scope and earlier permissions
 - [assets/BRAND.md](assets/BRAND.md): the emblem, colours, typeface, banners and site art
 - [assets/music/](assets/music/README.md): *Music for the Common Good*, the official soundtrack
 
@@ -38,5 +39,7 @@ connects and records. The runtime service that will load it on Railway has not b
 
 ## Licence
 
-Code: GNU General Public License v3. See [LICENSE](LICENSE). Knowledge in `memory/collective/`, and the art and
-music in `assets/`, are shared under CC BY-SA 4.0. The Guild typeface is under the SIL Open Font License 1.1.
+The **Commonweal License 1.0** covers the original repository: code, knowledge, identity, skills, art, music
+and typeface sources. See [LICENSE](LICENSE) for the terms and [LICENSING.md](LICENSING.md) for scope, existing
+license grants and third-party exceptions. Its binding terms are unchanged GNU GPLv3
+(`GPL-3.0-only`), accompanied by a nonbinding statement of our principles. It is GPLv3-compatible.

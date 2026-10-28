@@ -111,7 +111,7 @@
     function frame(id, body) { var h = new Uint8Array(10); h.set([...id].map(function (c) { return c.charCodeAt(0); })); var n = body.length; h[4] = n >>> 24; h[5] = n >>> 16 & 255; h[6] = n >>> 8 & 255; h[7] = n & 255; return [h, body]; }
     function textFrame(id, s) { var u = new Uint8Array(3 + s.length * 2); u[0] = 1; u[1] = 0xFF; u[2] = 0xFE; for (var i = 0; i < s.length; i++) { u[3 + 2 * i] = s.charCodeAt(i) & 255; u[4 + 2 * i] = s.charCodeAt(i) >>> 8; } return frame(id, u); }
     var parts = [].concat(textFrame('TIT2', meta.title), textFrame('TPE1', ARTIST), textFrame('TALB', ALBUM), textFrame('TRCK', meta.n + '/8'),
-      textFrame('TYER', YEAR), textFrame('TCON', 'Chiptune'), textFrame('TCOP', '2026 The Commonweal contributors, CC BY-SA 4.0'));
+      textFrame('TYER', YEAR), textFrame('TCON', 'Chiptune'), textFrame('TCOP', '2026 The Commonweal contributors, Commonweal License 1.0 (GPL-3.0-only)'));
     if (cover) { var head = new TextEncoder().encode('\0image/png\0\x03Cover\0'); var body = new Uint8Array(head.length + cover.length); body.set(head); body.set(cover, head.length); parts = parts.concat(frame('APIC', body)); }
     var size = parts.reduce(function (n, p) { return n + p.length; }, 0), h = new Uint8Array(10);
     h.set([73, 68, 51, 3, 0, 0, size >>> 21 & 127, size >>> 14 & 127, size >>> 7 & 127, size & 127]);
@@ -168,7 +168,7 @@
     return results;
   }
   async function writeAlbum(results) {
-    var album = { title: ALBUM, artist: ARTIST, year: YEAR, license: 'CC BY-SA 4.0', made_with: 'Vigil Box (BeepBox 4.2.2 synth) by VigilTech; composed in tools/studio/music.js',
+    var album = { title: ALBUM, artist: ARTIST, year: YEAR, license: 'Commonweal License 1.0 (GPL-3.0-only)', made_with: 'Vigil Box (BeepBox 4.2.2 synth) by VigilTech; composed in tools/studio/music.js',
       cover: 'commonweal-soundtrack-cover-3000.png', sampleRate: RATE, mastering: 'RMS matched to -16 dBFS, soft knee limiting under -1 dBFS',
       tracks: results.map(function (r) { var t = TRACKS[r.n - 1]; return { n: r.n, id: r.id, title: r.title, subtitle: t.subtitle, about: t.about, key: r.key, bpm: r.bpm, beatsPerBar: r.beatsPerBar, seconds: r.seconds, mp3: 'mp3/' + r.id + '.mp3', source: '../src/box/' + r.id + '.song.json' }; }) };
     await save('music/album.json', JSON.stringify(album, null, 2));

@@ -159,6 +159,7 @@ get done, and let the philosophy show in what Commonweal does rather than in slo
 
 ## Licences
 
-The artwork, music and brand assets are shared under **CC BY-SA 4.0**. Guild is under the **SIL Open Font
-License 1.1**, and the code is under the **GNU GPL v3**. Credit line: *Commonweal, the system of the common
+The original artwork, music, brand assets, typeface sources and code are offered under the
+**Commonweal License 1.0**. Existing CC BY-SA and OFL permissions remain valid; see
+[LICENSING.md](../LICENSING.md) for scope and exceptions. Credit line: *Commonweal, the system of the common
 good. Art made with Vigil Sprite, music with Vigil Box.*
