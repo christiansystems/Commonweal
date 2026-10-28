@@ -141,6 +141,12 @@ Web app manifest icons: `icons/icon-192.png`, `icons/icon-512.png` and `icons/ic
 | `social/youtube-channel-art-2560x1440.png` | 2560×1440 | YouTube (content sits inside the 1546×423 safe area) |
 | `social/og-image-1200x630.png` | 1200×630 | Link previews on every platform |
 | `logo/commonweal-avatar-1024.png` | 1024×1024 | Profile picture everywhere |
+| `social/facebook-cover-1640x624.png` | 1640×624 | Facebook cover |
+
+Ready-made posts are in `social/posts/`: an introduction, the motto, the album announcement (square and Story)
+and the track list (1080×1350). Every soundtrack track has its own art in `social/tracks/`: a 1024×1024 cover,
+plus square, story and landscape frames that [tools/studio/video.swift](../tools/studio/video.swift) turns into
+post videos with the song and a progress bar.
 
 The banners keep the centre for the name and push the network to the edges, so profile pictures, which sit
 bottom left on most platforms, never cover the content.

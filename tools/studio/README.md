@@ -34,9 +34,17 @@ This folder regenerates all of Commonweal's art and music from source with Vigil
 
    - <http://localhost:8790/studio/sprite.html>, then `await CY.make('all')` (or one job: `marks`, `wordmarks`,
      `favicons`, `banners`, `site`, `icons`, `album`, `specimen`)
+   - the same page, then `await CYS.make('all')` for the social media kit ([social.js](social.js): track covers,
+     video frames, posts and the Facebook cover)
    - <http://localhost:8790/studio/box.html>, then `await CYM.writeAlbum(await CYM.make('all'))` (or one
      track: `await CYM.make(3)`)
    - <http://localhost:8790/studio/review.html?f=logo/commonweal-mark-512.png,...> shows any assets side by side
+
+To make a track's post video from its frame and MP3 (macOS, no installs; the bar positions are `BAR` in social.js):
+
+   ```bash
+   swift tools/studio/video.swift assets/social/tracks/01-keystone-square-1080.png assets/music/mp3/01-keystone.mp3 keystone.mp4 28 1062 1024 8
+   ```
 
 The server writes only inside `assets/`. Rendered WAV masters go to `assets/music/wav/`, which git ignores
 because of its size; regenerate them whenever you need them.
