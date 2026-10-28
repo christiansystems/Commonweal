@@ -1,0 +1,44 @@
+{
+  "name": "commonweal",
+  "description": "The system of the common good",
+  "version": "0.1.0",
+  "license": "GPL-3.0-only",
+  "entrypoint": "COMMONWEAL.md",
+  "philosophy": "THE-COMMONWEALIST-MANIFESTO.md",
+  "identity": [
+    "identity/manifesto.md",
+    "identity/principles.md",
+    "identity/voice.md",
+    "identity/history.md"
+  ],
+  "memory": {
+    "root": "memory",
+    "index": "memory/MEMORY.md",
+    "templates": "memory/_templates",
+    "writable": true
+  },
+  "skills": {
+    "root": "skills",
+    "enabled": [
+      "onboarding",
+      "mutual-aid-matching",
+      "introductions",
+      "knowledge-commons",
+      "collective-decision",
+      "algedonic-signal",
+      "administration",
+      "memory-keeping"
+    ]
+  },
+  "governance": {
+    "amendments": "governance/amendments.md",
+    "mandate": "governance/mandate.md"
+  },
+  "brand": {
+    "guide": "assets/BRAND.md",
+    "mark": "assets/logo/commonweal-mark-1024.png",
+    "avatar": "assets/logo/commonweal-avatar-1024.png",
+    "font": "assets/font",
+    "soundtrack": "assets/music/album.json"
+  }
+}

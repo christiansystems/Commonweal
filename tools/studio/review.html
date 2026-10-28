@@ -1,0 +1,19 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Commonweal asset review</title>
+<style>
+body { background: #888; margin: 8px; font: 11px monospace; color: #111; }
+figure { display: inline-block; margin: 4px; vertical-align: top; }
+img { display: block; max-height: var(--h, 220px); max-width: 100%; image-rendering: pixelated;
+  background: repeating-conic-gradient(#bbb 0 25%, #ddd 0 50%) 0 0 / 16px 16px; }
+</style>
+<div id="out"></div>
+<script>
+const q = new URLSearchParams(location.search);
+document.body.style.setProperty('--h', (q.get('h') || 220) + 'px');
+for (const f of (q.get('f') || '').split(',').filter(Boolean)) {
+  const fig = document.createElement('figure');
+  fig.innerHTML = '<img src="/assets/' + f + '?' + Date.now() + '"><figcaption>' + f + '</figcaption>';
+  document.getElementById('out').append(fig);
+}
+</script>

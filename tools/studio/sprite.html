@@ -1,0 +1,20 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Commonweal studio: Vigil Sprite</title>
+<style>body{background:#140708;color:#f6ebdd;font:14px monospace;margin:16px}img{image-rendering:pixelated;max-width:100%;border:1px solid #5a0b10;margin:4px}</style>
+<p>Vigil Sprite engine, driven by art.js. Run <code>await CY.make('all')</code>.</p>
+<div id="out"></div>
+<script>window.amerikaStudio = { info: { app: 'sprite', shell: 'commonweal-studio' } };</script>
+<script src="/vendor/AmerikaSprite/src/app/js/zlib.js"></script>
+<script src="/vendor/AmerikaSprite/src/app/js/png.js"></script>
+<script src="/vendor/AmerikaSprite/src/app/js/gif.js"></script>
+<script src="/vendor/AmerikaSprite/src/app/js/color.js"></script>
+<script src="/vendor/AmerikaSprite/src/app/js/model.js"></script>
+<script src="/vendor/AmerikaSprite/src/app/js/draw.js"></script>
+<script src="/vendor/AmerikaSprite/src/app/js/export.js"></script>
+<!-- export.js registers AS.exporter but tools.js looks up AS.export; alias it so the export tool works -->
+<script>AS.export = AS.exporter;</script>
+<script src="/vendor/AmerikaSprite/src/app/js/session.js"></script>
+<script src="/vendor/AmerikaSprite/src/app/js/tools.js"></script>
+<script src="font.js"></script>
+<script src="art.js"></script>

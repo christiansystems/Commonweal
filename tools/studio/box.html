@@ -1,0 +1,21 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Commonweal studio: Vigil Box</title>
+<style>body{background:#140708;color:#f6ebdd;font:14px monospace;margin:16px}</style>
+<p>Vigil Box engine (BeepBox synth + Vigil Box song tools), driven by music.js. Run <code>await CYM.make('all')</code>.</p>
+<pre id="log"></pre>
+<script>
+// Rendering yields with setTimeout(0), which browsers throttle in hidden tabs; MessageChannel is not throttled.
+(function () {
+  var ch = new MessageChannel(), q = [], st = window.setTimeout;
+  ch.port1.onmessage = function () { var f = q.shift(); if (f) f(); };
+  window.setTimeout = function (f, d) { var a = [].slice.call(arguments, 2); if (!d) { q.push(function () { f.apply(null, a); }); ch.port2.postMessage(0); return 0; } return st.apply(window, arguments); };
+})();
+</script>
+<script src="/vendor/AmerikaBox/src/app/beepbox_synth.min.js"></script>
+<script src="/vendor/AmerikaBox/src/app/amerika/theory.js"></script>
+<script src="/vendor/AmerikaBox/src/app/amerika/audio.js"></script>
+<script src="/vendor/AmerikaBox/src/app/amerika/songtools.js"></script>
+<script src="/vendor/AmerikaBox/src/app/amerika/export.js"></script>
+<script src="/vendor/AmerikaBox/src/app/amerika/vendor/lame.min.js"></script>
+<script src="music.js"></script>

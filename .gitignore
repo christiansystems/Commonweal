@@ -1,0 +1,3 @@
+# Rendered WAV masters are large; regenerate them with tools/studio
+assets/music/wav/
+.DS_Store
