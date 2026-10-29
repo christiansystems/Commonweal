@@ -2,7 +2,7 @@
 
 ![Guild specimen](guild-specimen-2048x1152.png)
 
-**Guild** is the typeface of Commonweal: an original 5×7 pixel face, in Regular and Bold. It's named for the
+**Guild** is the typeface of Keystone: an original 5×7 pixel face, in Regular and Bold. It's named for the
 guilds, the old associations of workers that kept good work, honest craft and shared standards alive from
 generation to generation.
 
@@ -36,6 +36,6 @@ font always match.
 
 ## Licence
 
-Guild’s original sources and future regenerated fonts use the [Commonweal License 1.0](../../LICENSE), whose legal terms are GPLv3 only.
+Guild’s original sources and future regenerated fonts use the [Keystone License 1.0](../../LICENSE), whose legal terms are GPLv3 only.
 Existing font files retain their [SIL Open Font License 1.1](OFL.txt) permissions, with no reserved font
 name. See [LICENSING.md](../../LICENSING.md) for the repository-wide scope and earlier grants.
