@@ -12,7 +12,7 @@ every conversation. The memories themselves live in the folders below.
 | Folder | `type` | What it holds |
 |---|---|---|
 | `collective/` | `collective` | Knowledge for everyone: how-tos, lessons learned, references, technology. The commons. |
-| `places/` | `place` | One file per town or district: its level, council, powers and traditions. From its council's public charter. |
+| `places/` | `place` | One file per state, county, city or town: its level, council, powers and traditions. From its council's public charter. |
 | `communities/` | `community` | One file per community or group that has joined: what it does, how to reach it, what it shares. Written with the group's agreement. |
 | `resources/` | `offer` or `need` | Things people have to share and things people need: tools, space, food, skills, time. |
 | `decisions/` | `decision` | Decisions groups have made through Keystone, with who decided and how. |

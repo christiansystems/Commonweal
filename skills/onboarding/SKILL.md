@@ -34,7 +34,7 @@ description: Welcome a new person or community to Keystone, explain what it can 
 
 ## A newcomer to the nation arrives
 
-Christian Democracy asks newcomers to take up the nation's language, laws and civic
+Christian Unionism asks newcomers to take up the nation's language, laws and civic
 customs, and promises real help to do it. Help first, ask later.
 
 1. If they are in urgent need, follow [algedonic-signal](../algedonic-signal/SKILL.md)

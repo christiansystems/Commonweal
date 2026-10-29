@@ -5,7 +5,7 @@ One line per memory: `- [Title](path) — hook`. Read
 
 ## Collective
 
-- [Origins of Keystone](collective/keystone-origins.md) — why Keystone exists, what Christian Democracy is, and where the project came from
+- [Origins of Keystone](collective/keystone-origins.md) — why Keystone exists, what Christian Unionism is, and where the project came from
 - [Viable System Model basics](collective/viable-system-model-basics.md) — Beer's five systems in plain words
 
 ## Towns and districts

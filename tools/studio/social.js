@@ -299,7 +299,7 @@
       await centre(S, 'FROM THE ALBUM STONE BY STONE', 135, 88, 1, P.paper);
       await cover(S, t, 7, 104);
       await rect(S, 7, 362, 256, 2, P.wine);
-      await centre(S, 'CHRISTIANDEMOCRACY.XYZ', 135, 376, 1, P.cream);
+      await centre(S, 'CHRISTIANUNION.XYZ', 135, 376, 1, P.cream);
       out = out.concat(await CY.save(S, base + '-story', [{ scale: 4, suffix: '-1080x1920' }]));
       // landscape frame for YouTube, 1920x1080 (also the thumbnail)
       S = await CY.sprite(480, 270, t.title + ' landscape frame');
@@ -364,7 +364,7 @@
     await CY.mark(S, 135, 92, 104, 'color');
     y = await albumTitle(S, 135, 156, 250, 'THE KEYSTONE SOUNDTRACK');
     await centre(S, n + ' ROCK TRACKS · ' + mins + ' MINUTES · FREE TO SHARE', 135, y + 14, 1, P.paper);
-    await centre(S, 'CHRISTIANDEMOCRACY.XYZ', 135, y + 30, 1, P.gold);
+    await centre(S, 'CHRISTIANUNION.XYZ', 135, y + 30, 1, P.gold);
     out = out.concat(await CY.save(S, 'social/posts/album-announcement', [{ scale: 4, suffix: '-1080' }]));
     // album story, 1080x1920
     S = await CY.sprite(270, 480, 'Keystone soundtrack story');
@@ -373,7 +373,7 @@
     await CY.mark(S, 135, 170, 150, 'color');
     y = await albumTitle(S, 135, 262, 250, 'THE KEYSTONE SOUNDTRACK');
     await centre(S, n + ' ROCK TRACKS · FREE TO SHARE', 135, y + 22, 1, P.paper);
-    await centre(S, 'CHRISTIANDEMOCRACY.XYZ', 135, y + 40, 1, P.gold);
+    await centre(S, 'CHRISTIANUNION.XYZ', 135, y + 40, 1, P.gold);
     out = out.concat(await CY.save(S, 'social/posts/album-story', [{ scale: 4, suffix: '-1080x1920' }]));
     // the motto, 1080x1080
     S = await CY.sprite(270, 270, 'Keystone motto');
@@ -382,7 +382,7 @@
     await CY.mark(S, 135, 104, 140, 'onred');
     await centre(S, 'THE COMMON GOOD,', 135, 198, 2, P.cream, { bold: true });
     await centre(S, 'BUILT STONE BY STONE.', 135, 218, 2, P.cream, { bold: true });
-    await centre(S, 'CHRISTIAN DEMOCRACY', 135, 250, 1, P.gold);
+    await centre(S, 'CHRISTIAN UNIONISM', 135, 250, 1, P.gold);
     out = out.concat(await CY.save(S, 'social/posts/motto', [{ scale: 4, suffix: '-1080' }]));
     // introduction, 1080x1080
     S = await CY.sprite(270, 270, 'Keystone introduction');
@@ -390,17 +390,17 @@
     await centre(S, 'MEET', 135, 26, 2, P.gold);
     await CY.mark(S, 135, 94, 106, 'color');
     await centre(S, 'KEYSTONE', 135, 160, 4, P.cream, { bold: true });
-    await centre(S, 'CHRISTIAN DEMOCRACY FOR ALL', 135, 200, 1, P.gold);
+    await centre(S, 'AN AI FOR THE COMMON GOOD', 135, 200, 1, P.gold);
     await centre(S, 'AN OPEN-SOURCE AI · ALWAYS HONEST', 135, 216, 1, P.paper);
-    await centre(S, 'CHRISTIANDEMOCRACY.XYZ', 135, 240, 1, P.gold);
+    await centre(S, 'CHRISTIANUNION.XYZ', 135, 240, 1, P.gold);
     out = out.concat(await CY.save(S, 'social/posts/introduction', [{ scale: 4, suffix: '-1080' }]));
-    // what Christian Democracy stands for, 1080x1350
-    S = await CY.sprite(216, 270, 'What Christian Democracy stands for');
+    // what Christian Unionism stands for, 1080x1350
+    S = await CY.sprite(216, 270, 'What Christian Unionism stands for');
     await bg(S, P.ink);
     await sunrise(S, 108, 330, 150, DAWN.slice(0, 5));
     await CY.mark(S, 108, 26, 38, 'color');
     await centre(S, 'CHRISTIAN', 108, 52, 2, P.cream, { bold: true });
-    await centre(S, 'DEMOCRACY', 108, 70, 2, P.cream, { bold: true });
+    await centre(S, 'UNIONISM', 108, 70, 2, P.cream, { bold: true });
     await centre(S, 'WHAT WE STAND FOR', 108, 90, 1, P.gold);
     y = 108;
     for (var pillar of ['DIGNITY OF EVERY PERSON', 'THE COMMON GOOD', 'SOLIDARITY', 'SUBSIDIARITY', 'THE POOR FIRST', 'THE DIGNITY OF WORK', 'THE FAMILY', 'STEWARDSHIP', 'CARE FOR CREATION', 'FAITH, NEVER FORCED', 'ONE NATION, OPEN TO ALL']) {
@@ -408,7 +408,7 @@
       await text(S, pillar, 32, y, 1, P.cream);
       y += 12;
     }
-    await centre(S, 'CHRISTIANDEMOCRACY.XYZ', 108, 252, 1, P.gold);
+    await centre(S, 'CHRISTIANUNION.XYZ', 108, 252, 1, P.gold);
     out = out.concat(await CY.save(S, 'social/posts/what-we-stand-for', [{ scale: 5, suffix: '-1080x1350' }]));
     return out;
   };
@@ -422,8 +422,8 @@
     await T(S, 'new_layer', { name: 'Identity' });
     await CY.mark(S, 205, 44, 56, 'color');
     await centre(S, 'KEYSTONE', 205, 82, 3, P.cream, { bold: true });
-    await centre(S, 'CHRISTIAN DEMOCRACY FOR ALL', 205, 112, 1, P.gold);
-    await centre(S, 'CHRISTIANDEMOCRACY.XYZ', 205, 126, 1, P.paper);
+    await centre(S, 'THE CHRISTIAN UNION PARTY', 205, 112, 1, P.gold);
+    await centre(S, 'CHRISTIANUNION.XYZ', 205, 126, 1, P.paper);
     return CY.save(S, 'social/facebook-cover', [{ scale: 4, suffix: '-1640x624' }]);
   };
 
@@ -486,7 +486,7 @@
     await text(S, 'STONE BY STONE', tx, 116, tu, P.cream, { bold: true });
     await text(S, 'KEYSTONE', tx, 116 + 7 * tu + 18, 2, P.red, { bold: true });
     await text(S, n + ' ROCK TRACKS · ' + mins + ' MINUTES · FREE TO SHARE', tx, 116 + 7 * tu + 46, 1, P.paper);
-    await text(S, 'CHRISTIANDEMOCRACY.XYZ', tx, 116 + 7 * tu + 62, 1, P.gold);
+    await text(S, 'CHRISTIANUNION.XYZ', tx, 116 + 7 * tu + 62, 1, P.gold);
     out = out.concat(await CY.save(S, base + 'release-day-wide', [{ scale: 4, suffix: '-1920x1080' }]));
     // release day story with room for a link sticker, 1080x1920
     S = await CY.sprite(270, 480, 'Release day, story with link');

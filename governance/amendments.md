@@ -25,7 +25,7 @@ happens in the open, through this repository's public history.
 
 ## Who decides
 
-Under Christian Democracy the people's state governs and the people hold final
+Under Christian Unionism the people's state governs and the people hold final
 authority. For now the project is young and its founders maintain it, acting
 as a stand-in for that state. As communities join, this section should be
 amended to hand decisions to the bodies the people choose. Doing that is one of

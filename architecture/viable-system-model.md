@@ -8,7 +8,7 @@ self-governing system needs. Keystone is designed with it. A plain-words summary
 
 | VSM system | Role | In Keystone |
 |---|---|---|
-| **System 1: Operations** | The units doing real work, as autonomous as possible | The **towns** and **districts**, and the people, families, communities and guilds within them. They run their own affairs within national law. [onboarding](../skills/onboarding/SKILL.md) brings people in. |
+| **System 1: Operations** | The units doing real work, as autonomous as possible | The **cities, towns and counties** of a state, and the people, families, communities and guilds within them. They run their own affairs within state and federal law. [onboarding](../skills/onboarding/SKILL.md) brings people in. |
 | **System 2: Coordination** | Stops units getting in each other's way | Shared open standards that make every part compatible, plus [introductions](../skills/introductions/SKILL.md) and shared records, so groups can see each other and avoid clashes or duplicate effort. |
 | **System 3: Control** | Shares out resources and looks after the whole, now | [mutual-aid-matching](../skills/mutual-aid-matching/SKILL.md) matches offers to needs, and [administration](../skills/administration/SKILL.md) carries out the routine decisions in Keystone's [mandate](../governance/mandate.md). |
 | **System 3\*: Audit** | Checks that records match reality | [memory-keeping](../skills/memory-keeping/SKILL.md): provenance, expiry and correction of records. |
@@ -19,11 +19,12 @@ self-governing system needs. Keystone is designed with it. A plain-words summary
 ## Recursion
 
 The VSM is recursive: every viable system contains viable systems and is part
-of a bigger one. Christian Democracy organises the nation the same way. A town
-is a viable system inside a district, and a district is a viable system inside
-the Nation. Subsidiarity is the rule between them.
+of a bigger one. America is already built that way: a town is a viable system
+inside a county, a county inside a state, and a state inside the nation.
+Subsidiarity is the rule between them.
 
-Every town and district runs its own Keystone on the same open code and national
+Within a state, the state and every county, city and town that joins runs its own
+Keystone on the same open code and shared
 standards, and each treats the levels around it the same way: respect the
 autonomy of the level below (subsidiarity), coordinate across the level it is
 working at, and pass upward only what the higher level needs, which is

@@ -1,14 +1,14 @@
-# Keystone and Christian Democracy brand guide
+# Keystone and Christian Unionism brand guide
 
-Everything a site, app or poster needs to look and sound like Keystone and Christian Democracy. All artwork was drawn with
+Everything a site, app or poster needs to look and sound like Keystone and Christian Unionism. All artwork was drawn with
 **Vigil Sprite**, the music made with **Vigil Box**, and the typeface **Guild** was built for Keystone.
 Every asset is regenerated from source by [tools/studio](../tools/studio/README.md), and each image has an
 editable `.asprite.json` under [src/sprite/](src/sprite/).
 
 ## The idea
 
-Keystone is a network of AI systems for the common good, and it carries the philosophy of Christian Democracy
-(see [THE-CHRISTIAN-DEMOCRATIC-MANIFESTO.md](../THE-CHRISTIAN-DEMOCRATIC-MANIFESTO.md)). The look comes from three places:
+Keystone is a network of AI systems for the common good, and it carries the philosophy of Christian Unionism
+(see [THE-CHRISTIAN-UNIONIST-MANIFESTO.md](../THE-CHRISTIAN-UNIONIST-MANIFESTO.md)). The look comes from three places:
 
 - **Red and gold.** Red is for the workers and for solidarity, and it is always the main colour. Gold is for
   the common wealth, for tradition and for the dawn of plenty.
@@ -56,9 +56,9 @@ A round arch of red stones held together by one gold keystone, with a gold sun r
 | `logo/keystone-stacked-{light,dark}-1024.png` | 1024×1024 | Square lockup for posters and covers |
 
 The name is written **KEYSTONE** in the wordmark and **Keystone** in running text. The philosophy is
-**Christian Democracy**, and its followers are **Christian Democrats**. The tagline is
-**Christian Democracy for all.** The motto is **The common good, built stone by stone.** The website is
-**ChristianDemocracy.xyz**.
+**Christian Unionism**, and its followers are **Christian Unionists**. The tagline is
+**Christian Unionism for all.** The motto is **The common good, built stone by stone.** The website is
+**ChristianUnion.xyz**.
 
 ## Colour
 

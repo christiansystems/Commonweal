@@ -1,6 +1,6 @@
 # History
 
-The traditions Keystone comes from. Christian Democracy is a modern movement,
+The traditions Keystone comes from. Christian Unionism is a new philosophy,
 but its roots are very old.
 
 ## The dignity of the person
@@ -36,13 +36,13 @@ From these come the pillars Keystone holds: dignity, the common good,
 solidarity, subsidiarity, care for the poor, the dignity of work, the family,
 stewardship, care for creation and participation.
 
-## Christian Democracy
+## The Christian democratic tradition
 
 In the twentieth century, people inspired by this teaching built a political
 movement that joined faith and democracy. It rebuilt nations after war, founded
 welfare states, gave workers seats on company boards, created the social market
 economy and defended human rights against the totalitarian ideologies of the
-age. Christian Democracy keeps its central conviction: politics exists to serve
+age. Christian Unionism keeps its central conviction: politics exists to serve
 the human person and the common good.
 
 ## The guilds
@@ -57,7 +57,7 @@ Keystone's design comes from cybernetics, the science of how systems steer
 themselves through feedback. In *Brain of the Firm* (1972) the British
 cybernetician Stafford Beer set out the **Viable System Model**: the five parts
 any self-governing system needs, nested so that every whole is made of smaller
-wholes. That fits a nation of towns within districts within a Nation, and it
+wholes. That fits America's towns within counties within states within the nation, and it
 gives subsidiarity a working design. Keystone takes two lessons from Beer: shared,
 current information lets a nation coordinate itself, and problems are best
 caught early, by the people closest to them.

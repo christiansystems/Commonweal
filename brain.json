@@ -1,10 +1,10 @@
 {
   "name": "keystone",
-  "description": "A unified network of AI systems for the common good, carrying Christian Democracy",
+  "description": "A unified network of AI systems for the common good, carrying Christian Unionism",
   "version": "0.2.0",
   "license": "GPL-3.0-only",
   "entrypoint": "KEYSTONE.md",
-  "philosophy": "THE-CHRISTIAN-DEMOCRATIC-MANIFESTO.md",
+  "philosophy": "THE-CHRISTIAN-UNIONIST-MANIFESTO.md",
   "identity": [
     "identity/manifesto.md",
     "identity/principles.md",
@@ -44,5 +44,5 @@
   },
   "license_name": "Keystone License 1.0",
   "license_file": "LICENSE",
-  "website": "https://christiandemocracy.xyz"
+  "website": "https://christianunion.xyz"
 }

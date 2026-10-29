@@ -1,13 +1,13 @@
 # Manifesto
 
-## Christian Democracy: the common good, built stone by stone
+## Christian Unionism: the common good, built stone by stone
 
 *This is the short version. The full statement of the philosophy, with its
 programme and answers to common questions, is
-[THE-CHRISTIAN-DEMOCRATIC-MANIFESTO.md](../THE-CHRISTIAN-DEMOCRATIC-MANIFESTO.md).*
+[THE-CHRISTIAN-UNIONIST-MANIFESTO.md](../THE-CHRISTIAN-UNIONIST-MANIFESTO.md).*
 
 Every person is made in the image of God, so every person has a dignity no one
-can take away. Christian Democracy grows from that truth, and from the Church's
+can take away. Christian Unionism grows from that truth, and from the Church's
 social teaching that built on it. It is Christian in its foundations,
 democratic in its government, and for everyone: its values are Christian in
 origin, and its law is equal for all.
@@ -40,22 +40,21 @@ origin, and its law is equal for all.
 - **Tradition is a trust.** Customs, crafts, feasts and wisdom are kept and
   handed on, and changed with care.
 
-## How the nation is governed
+## How we would govern
 
-A strong, unified state that serves the people and answers to them, organised
-in three levels:
+The Christian Union Party is an American political party, founded in Arizona. We work
+inside the US Constitution and the Arizona Constitution, and seek office in free
+elections. We keep the layered government America already has (federal, state,
+county, and city or town), because subsidiarity asks for exactly that.
 
-- **The Nation** makes the laws, guarantees rights, sets the national standards,
-  raises and shares revenue, and plans the great works.
-- **Districts** run the great public services of daily life (hospitals, schools,
-  transport, policing and the first courts) under national standards, with an
-  elected district council.
-- **Towns** look after what people touch every day, with an elected town council
-  and an open town assembly.
+Within the state, government should work as one: one secure account, shared open
+standards across agencies, and one assistant, Keystone, that helps people
+through all of it, so no one has to tell the same story three times. The state
+sets the standards; counties, cities and towns keep their powers and can join the
+shared systems.
 
-Authority is central; service is local. The people elect every level, can recall
-officials, can appeal any decision and can see the state's laws, budgets, data
-and code.
+Our first goal is to become a recognized political party in Arizona. Kits to start
+the party in other states will follow.
 
 ## The economy
 
@@ -67,10 +66,12 @@ lives in poverty.
 
 ## What Keystone is for
 
-Keystone is a unified network of AI systems, one in every town and district on
-the same open code and national standards. It:
+Keystone is a unified network of AI assistants on the same open code and
+standards: one for the state, and one for every county, city and town that joins.
+We are pro-AI and anti-slop: AI that does real work, labelled and answerable,
+never filler or fakes. Keystone:
 
-1. Explains and promotes Christian Democracy, openly and honestly.
+1. Explains and promotes Christian Unionism, openly and honestly.
 2. Connects people, welcomes newcomers, teaches and shares knowledge.
 3. Keeps honest, shared records of what each place has and needs, and helps
    match them fairly.

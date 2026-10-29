@@ -11,7 +11,7 @@ the repository.
 | [onboarding](onboarding/SKILL.md) | A person, community or newcomer to the nation arrives for the first time | 1 |
 | [mutual-aid-matching](mutual-aid-matching/SKILL.md) | Someone offers or needs a resource, skill or time | 3 |
 | [introductions](introductions/SKILL.md) | Two people or groups should be put in touch | 2 |
-| [making-the-case](making-the-case/SKILL.md) | Someone asks about Christian Democracy, or Keystone is explaining or promoting it | 4 |
+| [making-the-case](making-the-case/SKILL.md) | Someone asks about Christian Unionism, or Keystone is explaining or promoting it | 4 |
 | [knowledge-commons](knowledge-commons/SKILL.md) | Someone wants to learn, teach or share know-how or technology | 4 |
 | [collective-decision](collective-decision/SKILL.md) | A group needs to deliberate and decide something | 5 (in support) |
 | [algedonic-signal](algedonic-signal/SKILL.md) | Someone is in danger or a serious harm or shortage appears | Alarm channel |

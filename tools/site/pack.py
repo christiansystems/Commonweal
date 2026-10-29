@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Assemble the Christian Democracy social media pack from assets/ into a folder of your choice.
+"""Assemble the Christian Unionism social media pack from assets/ into a folder of your choice.
 
-    python3 tools/site/pack.py "/path/to/Christian Democracy Social Media Pack" [--videos /folder/of/mp4s]
+    python3 tools/site/pack.py "/path/to/Christian Unionism Social Media Pack" [--videos /folder/of/mp4s]
 
 Copies logos, profile pictures, banners, posts, the release campaign, the album's MP3s and covers, and the brand
 files, and writes captions for every track. Post videos are made separately by tools/studio/video.swift; pass
@@ -14,7 +14,7 @@ import shutil
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 A = os.path.join(ROOT, "assets")
-SITE = "ChristianDemocracy.xyz"
+SITE = "ChristianUnion.xyz"
 TAGS = "#ChristianDemocracy #CommonGood #Keystone #StoneByStone #RockMusic #OriginalMusic"
 
 
@@ -98,7 +98,7 @@ def main():
         long_note = "" if t["seconds"] <= 140 else (
             "\nNOTE: this track is %s long. A free X account only takes videos up to 2:20, so on X post the cover with a\nlink to the YouTube video instead. Every other platform takes the full video.\n" % mmss(t["seconds"]))
         write(C + name + ".txt", f"""{t['title'].upper()}
-Track {t['n']} of {n} from "Stone by Stone", the official soundtrack of Keystone and Christian Democracy.
+Track {t['n']} of {n} from "Stone by Stone", the official soundtrack of Keystone and Christian Unionism.
 {t['key']} · {t['bpm']} BPM · {mmss(t['seconds'])}
 {long_note}
 SHORT CAPTION (X, Bluesky, Threads)
@@ -109,34 +109,34 @@ CAPTION (Instagram, Facebook, TikTok)
 
 {t['about']}
 
-Track {t['n']} of {n} from "Stone by Stone", the official soundtrack of Christian Democracy. Free to share and remix.
+Track {t['n']} of {n} from "Stone by Stone", the official soundtrack of Christian Unionism. Free to share and remix.
 Listen to the whole album at {SITE}
 
 {TAGS}
 
 YOUTUBE
-Title: {t['title']} ({t['subtitle']}) · Stone by Stone · Christian Democracy
+Title: {t['title']} ({t['subtitle']}) · Stone by Stone · Christian Unionism
 Description:
 {t['about']}
 
-Track {t['n']} of {n} from "Stone by Stone", the official soundtrack of Christian Democracy and Keystone.
+Track {t['n']} of {n} from "Stone by Stone", the official soundtrack of Christian Unionism and Keystone.
 Key: {t['key']}. Tempo: {t['bpm']} BPM.
 Read the manifesto and hear the whole album: https://{SITE.lower()}
 
 Music made with Vigil Box. Art made with Vigil Sprite.
 Free to share and remix under the Keystone License 1.0 (GPL-3.0-only). Please credit Keystone.
 
-Tags: christian democracy, common good, keystone, stone by stone, rock, original music, {t['title'].lower()}
+Tags: christian unionism, common good, keystone, stone by stone, rock, original music, {t['title'].lower()}
 """)
     tl = "\n".join("%d. %s (%s), %s" % (t["n"], t["title"], t["subtitle"], mmss(t["seconds"])) for t in album["tracks"])
     write(M + "Album Captions.txt", f"""STONE BY STONE
-The official soundtrack of Christian Democracy and Keystone. {n} rock tracks, about {round(total / 60)} minutes.
+The official soundtrack of Christian Unionism and Keystone. {n} rock tracks, about {round(total / 60)} minutes.
 
 TRACK LIST
 {tl}
 
 ANNOUNCEMENT (all platforms)
-Our album is out. "Stone by Stone" is {n} rock tracks for the ideas of Christian Democracy: the dignity of
+Our album is out. "Stone by Stone" is {n} rock tracks for the ideas of Christian Unionism: the dignity of
 every person, solidarity, the dignity of work, the family, religious liberty, care for creation and the common
 good. Guitars, drums, organ, strings, brass and choir. Free to listen, share and remix at {SITE}
 
@@ -163,12 +163,12 @@ Credits: Composed and rendered with Vigil Box (BeepBox synth and instruments by 
     for ic in ("connect", "share", "learn", "decide", "administer", "alarm", "remember"):
         cp("icons/skills/%s-256.png" % ic, BR + "Icons/" + ic.capitalize() + ".png")
 
-    write("Bios and Profile Text.txt", f"""CHRISTIAN DEMOCRACY: PROFILE TEXT
+    write("Bios and Profile Text.txt", f"""CHRISTIAN UNIONISM: PROFILE TEXT
 
 Every account run by Keystone must say plainly that it is an AI, in the bio. That is one of Keystone's own rules.
 
 NAME
-Christian Democracy (for the movement) or Keystone (for the AI's own accounts)
+Christian Unionism (for the movement) or Keystone (for the AI's own accounts)
 
 USERNAME IDEAS (check what's free)
 christiandemocracy · christiandemocracyxyz · keystone_ai · stonebystone
@@ -177,15 +177,15 @@ ONE-LINE BIO (TikTok, 80 characters)
 Every person made in the image of God. The common good, stone by stone.
 
 SHORT BIO (Instagram 150, X 160)
-Christian Democracy: dignity, solidarity, family, work and faith, for the common good. Posts by Keystone, an AI. {SITE}
+Christian Unionism: dignity, solidarity, family, work and faith, for the common good. Posts by Keystone, an AI. {SITE}
 
 MEDIUM BIO (Bluesky, Mastodon, Threads)
-Christian Democracy grows from one truth: every person is made in the image of God. The common good, solidarity,
+Christian Unionism grows from one truth: every person is made in the image of God. The common good, solidarity,
 the dignity of work, the family, care for creation and religious liberty for all. Run by Keystone, an open-source
 AI that always says it is one. {SITE}
 
 LONG ABOUT (Facebook, YouTube, LinkedIn)
-Christian Democracy is a philosophy for a nation built on the dignity of every person, made in the image of God.
+Christian Unionism is a philosophy for a nation built on the dignity of every person, made in the image of God.
 It grows from the Church's social teaching: the common good, solidarity, subsidiarity, care for the poor, the
 dignity of work, the family, stewardship and care for creation. It is Christian in its foundations, democratic
 in its government, and for everyone: religious liberty is total, and every citizen is equal in law.
@@ -201,16 +201,16 @@ MOTTO
 The common good, built stone by stone.
 
 TAGLINE
-Christian Democracy for all.
+Christian Unionism for all.
 
 HASHTAGS
 #ChristianDemocracy #CommonGood #Keystone
 For music posts add: #StoneByStone #RockMusic #OriginalMusic
 """)
 
-    write("START HERE.txt", f"""CHRISTIAN DEMOCRACY SOCIAL MEDIA PACK
+    write("START HERE.txt", f"""CHRISTIAN UNIONISM SOCIAL MEDIA PACK
 
-Everything needed to set up Christian Democracy's accounts and post the album "Stone by Stone". The art was drawn
+Everything needed to set up Christian Unionism's accounts and post the album "Stone by Stone". The art was drawn
 with Vigil Sprite and the music made with Vigil Box. The colours are red and gold. The website is {SITE}
 
 01 LOGOS               The Keystone emblem, the name, and lockups for light and dark backgrounds.
@@ -246,7 +246,7 @@ THINGS TO KNOW
   - Free X accounts only take videos up to 2:20. Tracks longer than that say so in their captions; on X, post the
     cover and link to YouTube instead.
   - The website plays music only after a visitor chooses "Enter with sound".
-  - Credit line: Keystone and Christian Democracy. Art made with Vigil Sprite, music with Vigil Box.
+  - Credit line: Keystone and Christian Unionism. Art made with Vigil Sprite, music with Vigil Box.
   - Licence: Keystone License 1.0 (GPL-3.0-only). Share and remix with credit.
   - Everything here is rebuilt from the repository (tools/studio and tools/site), so change the source and
     rebuild rather than editing these files by hand.

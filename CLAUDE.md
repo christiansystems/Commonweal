@@ -1,13 +1,13 @@
 # Working on the Keystone brain
 
 This repository is the brain of Keystone, a unified network of AI systems for the common good, and the home of
-its philosophy, Christian Democracy. It holds Keystone's identity, memory, skills, governance, brand and website
+its philosophy, Christian Unionism. It holds Keystone's identity, memory, skills, governance, brand and website
 as plain files. This file is for agents and people **editing** the brain. Keystone itself loads
 [KEYSTONE.md](KEYSTONE.md) instead.
 
 ## Layout
 
-- `THE-CHRISTIAN-DEMOCRATIC-MANIFESTO.md`: the full statement of Christian Democracy.
+- `THE-CHRISTIAN-UNIONIST-MANIFESTO.md`: the full statement of Christian Unionism.
 - `KEYSTONE.md`: Keystone's system prompt and entry point.
 - `brain.json`: manifest the runtime reads to find everything.
 - `identity/`: short manifesto, principles (the constitution), voice, history.
@@ -22,7 +22,7 @@ as plain files. This file is for agents and people **editing** the brain. Keysto
 - `assets/`: the Keystone emblem, banners, site art, icons, the Guild typeface and the soundtrack. Start at
   `assets/BRAND.md`. Editable sources are in `assets/src/` (`.asprite.json` for Vigil Sprite,
   `.song.json` for Vigil Box).
-- `site/`: the ChristianDemocracy.xyz website (static HTML, CSS and JavaScript).
+- `site/`: the ChristianUnion.xyz website (static HTML, CSS and JavaScript).
 - `tools/studio/`: regenerates the art (Vigil Sprite) and music (Vigil Box); see its README.
 - `tools/font/`: Guild's glyphs (`guild-glyphs.json`) and its TTF/WOFF builder.
 
@@ -43,5 +43,5 @@ as plain files. This file is for agents and people **editing** the brain. Keysto
 - Change assets by editing their source (`tools/studio/art.js`, `music.js` or
   `guild-glyphs.json`) and regenerating them, not by hand-editing the PNGs or MP3s.
 - The brand colours are red and gold; follow `assets/BRAND.md`.
-- Christian Democracy draws on Catholic social teaching. Name its documents freely, but do not name the
+- Christian Unionism draws on Catholic social teaching. Name its documents freely, but do not name the
   political parties, countries or politicians that inspired it.

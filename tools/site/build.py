@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build the media for ChristianDemocracy.xyz.
+"""Build the media for ChristianUnion.xyz, the Christian Union Party's website.
 
 Copies the soundtrack, covers, logos, icons and the Guild font from assets/ into site/media/, writes the album's
-track list as site/media/album.json, and turns THE-CHRISTIAN-DEMOCRATIC-MANIFESTO.md into an HTML fragment
+track list as site/media/album.json, and turns THE-CHRISTIAN-UNIONIST-MANIFESTO.md into an HTML fragment
 (site/media/manifesto.html) for the site's reader. Uses only Python's standard library.
 
     python3 tools/site/build.py
@@ -94,13 +94,15 @@ def main():
         copy("icons/" + f, "icons/" + f)
     for f in ("connect", "share", "learn", "decide", "administer", "alarm", "remember"):
         copy("icons/skills/%s-256.png" % f, "icons/skills/%s.png" % f)
-    copy("social/og-image-1200x630.png", "og-image.png")
+    copy("social/christian-union-og-1200x630.png", "og-image.png")
+    for f in ("christian-union-lockup-dark-2048.png", "christian-union-lockup-light-2048.png", "christian-union-stacked-dark-1024.png", "christian-union-stacked-light-1024.png"):
+        copy("logo/" + f, "logo/" + f)
     for f in ("Guild-Regular.woff", "Guild-Bold.woff"):
         copy("font/" + f, "font/" + f)
     json.dump({"title": album["title"], "artist": album["artist"], "year": album["year"], "license": album["license"],
                "cover": "media/covers/album-600.png", "tracks": tracks},
               open(os.path.join(MEDIA, "album.json"), "w"), indent=1)
-    md = open(os.path.join(ROOT, "THE-CHRISTIAN-DEMOCRATIC-MANIFESTO.md")).read()
+    md = open(os.path.join(ROOT, "THE-CHRISTIAN-UNIONIST-MANIFESTO.md")).read()
     open(os.path.join(MEDIA, "manifesto.html"), "w").write(markdown(md) + "\n")
     print("site/media: %d tracks, manifesto %d KB" % (len(tracks), os.path.getsize(os.path.join(MEDIA, "manifesto.html")) // 1024))
 

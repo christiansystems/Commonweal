@@ -71,7 +71,7 @@ python3 tools/site/build.py
 ```
 
 ```bash
-python3 tools/site/pack.py "/path/to/Christian Democracy Social Media Pack" --videos /path/to/rendered/mp4s
+python3 tools/site/pack.py "/path/to/Christian Unionism Social Media Pack" --videos /path/to/rendered/mp4s
 ```
 
 With the studio server running, the site is at <http://localhost:8790/site/>.

@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Christian Democracy</title>
-<meta name="description" content="Christian Democracy: every person made in the image of God, and a nation built for the common good. The ideas, the programme, Keystone, and the soundtrack Stone by Stone.">
+<title>Christian Union Party</title>
+<meta name="description" content="The Christian Union Party: a new political party founded in Arizona. The dignity of every person, government that works as one, and AI that does real work. Help us get on the Arizona ballot.">
 <meta name="theme-color" content="#140708">
-<meta property="og:title" content="Christian Democracy">
-<meta property="og:description" content="The common good, built stone by stone.">
-<meta property="og:image" content="https://christiandemocracy.xyz/media/og-image.png">
-<meta property="og:url" content="https://christiandemocracy.xyz/">
+<meta property="og:title" content="Christian Union Party">
+<meta property="og:description" content="A new political party, founded in Arizona.">
+<meta property="og:image" content="https://christianunion.xyz/media/og-image.png">
+<meta property="og:url" content="https://christianunion.xyz/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="16x16" href="media/icons/favicon-16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="media/icons/favicon-32.png">
@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body class="gated">
 
@@ -28,35 +28,32 @@
   <canvas id="gate-sky" aria-hidden="true"></canvas>
   <div class="gate-inner">
     <svg id="gate-arch" class="arch" viewBox="0 0 400 300" aria-hidden="true"></svg>
-    <p class="kicker">ChristianDemocracy.xyz</p>
-    <h1 id="gate-title" class="pixel">Christian<br>Democracy</h1>
+    <p class="kicker">Founded in Arizona</p>
+    <h1 id="gate-title" class="pixel">Christian<br>Union</h1>
     <p class="gate-motto">The common good, built stone by stone.</p>
     <div class="gate-buttons">
-      <button id="enter-sound" class="btn btn-gold btn-big" type="button">
-        <span class="btn-icon" aria-hidden="true">&#9654;</span> Enter with sound
-      </button>
+      <button id="enter-sound" class="btn btn-gold btn-big" type="button"><span class="btn-icon" aria-hidden="true">&#9654;</span> Enter with sound</button>
       <button id="enter-quiet" class="btn btn-ghost btn-big" type="button">Enter quietly</button>
     </div>
-    <p class="gate-note">With sound, the soundtrack <em>Stone by Stone</em> starts playing. You can pause it any time.</p>
   </div>
 </div>
 
 <!-- ============================================================ navigation -->
 <header id="top" class="nav">
-  <a class="brand" href="#hero" aria-label="Christian Democracy, home">
+  <a class="brand" href="#hero" aria-label="Christian Union Party, home">
     <img src="media/logo/keystone-mark-512.png" alt="" width="40" height="40">
-    <span class="pixel">Christian Democracy</span>
+    <span class="pixel">Christian Union</span>
   </a>
   <nav aria-label="Sections">
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
     <ul id="nav-links">
+      <li><a href="#ballot">The ballot</a></li>
+      <li><a href="#platform">Platform</a></li>
+      <li><a href="#ai">AI</a></li>
+      <li><a href="#government">Government</a></li>
       <li><a href="#beliefs">Beliefs</a></li>
-      <li><a href="#nation">The Nation</a></li>
-      <li><a href="#economy">Economy</a></li>
-      <li><a href="#faith">Faith</a></li>
-      <li><a href="#keystone">Keystone</a></li>
+      <li><a href="#states">States</a></li>
       <li><a href="#music">Music</a></li>
-      <li><a href="#programme">Programme</a></li>
       <li><a href="#manifesto" class="open-reader">Manifesto</a></li>
     </ul>
   </nav>
@@ -70,193 +67,199 @@
   <div class="hero-sun" aria-hidden="true"></div>
   <div class="hero-content">
     <svg id="hero-arch" class="arch" viewBox="0 0 400 300" aria-hidden="true"></svg>
-    <p class="kicker reveal">Every person is made in the image of God</p>
-    <h1 class="pixel hero-title reveal"><span>Christian</span> <span>Democracy</span></h1>
-    <p class="hero-lede reveal">A nation built for the common good: strong, free and fair, faithful to its roots, kind to the weakest of its people, and open to everyone willing to belong.</p>
+    <p class="kicker reveal">A new political party · Founded in Arizona</p>
+    <h1 class="pixel hero-title reveal"><span>Christian</span> <span>Union</span></h1>
+    <p class="hero-lede reveal">The dignity of every person. A state government that works as one. AI that does real work, and none of the slop. We're organizing to put the Christian Union Party on Arizona's ballot.</p>
     <div class="hero-cta reveal">
-      <a href="#manifesto" class="btn btn-gold open-reader">Read the manifesto</a>
-      <a href="#music" class="btn btn-ghost">Hear the album</a>
+      <a href="#ballot" class="btn btn-gold">Help us get on the ballot</a>
+      <a href="#platform" class="btn btn-ghost">Read the platform</a>
     </div>
   </div>
-  <a class="scroll-cue" href="#dignity" aria-label="Scroll down"><span></span></a>
+  <a class="scroll-cue" href="#ballot" aria-label="Scroll down"><span></span></a>
 </section>
 
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span>Dignity</span><span>The common good</span><span>Solidarity</span><span>Subsidiarity</span><span>The poor first</span><span>The dignity of work</span><span>The family</span><span>Stewardship</span><span>Care for creation</span><span>Faith, never forced</span><span>One nation, open to all</span>
-    <span>Dignity</span><span>The common good</span><span>Solidarity</span><span>Subsidiarity</span><span>The poor first</span><span>The dignity of work</span><span>The family</span><span>Stewardship</span><span>Care for creation</span><span>Faith, never forced</span><span>One nation, open to all</span>
+    <span>Dignity</span><span>One connected Arizona</span><span>Pro-AI, anti-slop</span><span>Families first</span><span>A just wage</span><span>Water for every town</span><span>Faith, never forced</span><span>Open to all</span>
+    <span>Dignity</span><span>One connected Arizona</span><span>Pro-AI, anti-slop</span><span>Families first</span><span>A just wage</span><span>Water for every town</span><span>Faith, never forced</span><span>Open to all</span>
   </div>
 </div>
 
-<!-- ============================================================ dignity -->
-<section id="dignity" class="section statement">
-  <div class="wrap narrow">
-    <p class="big-quote reveal">Because every person carries the image of God, <mark>no one is disposable</mark>: not the worker, not the sick, not the disabled, not the child, not the old, and not the stranger at the door.</p>
-    <div class="cols-3 reveal-group">
-      <div class="reveal"><h3 class="pixel">Christian</h3><p>In its foundations: its view of the person, its moral law, its care for the weak and its hope.</p></div>
-      <div class="reveal"><h3 class="pixel">Democratic</h3><p>In its government: power comes from the people, answers to the people and can be replaced by them.</p></div>
-      <div class="reveal"><h3 class="pixel">For everyone</h3><p>Our values are Christian in origin. Our law is equal for all, and every faith, and none, stands equal before it.</p></div>
+<!-- ============================================================ the ballot -->
+<section id="ballot" class="section ballot">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="kicker">Step one</p>
+      <h2 class="pixel">The road to Arizona's ballot</h2>
+      <p>Arizona lets new parties onto the ballot by petition. Here is exactly what the law asks, and where we are.</p>
+    </header>
+    <div class="road reveal-group">
+      <div class="milestone reveal"><span class="ms-num">1</span><div><h3>Signatures</h3><p>Registered Arizona voters sign a <em>petition for political party recognition</em>. We need signatures equal to <b>1⅓% of the votes cast for governor</b> at the last election. For the 2026 cycle that was <b>34,126</b>. The number resets after the November 2026 governor's race.</p></div></div>
+      <div class="milestone reveal"><span class="ms-num">2</span><div><h3>From across the state</h3><p>Signers must be registered in <b>at least five counties</b>, and <b>at least 10%</b> must live in counties with fewer than 500,000 people. This is a party for all of Arizona, not one city.</p></div></div>
+      <div class="milestone reveal"><span class="ms-num">3</span><div><h3>On time</h3><p>The petition is filed with the Secretary of State <b>at least 250 days before the primary</b>, and no signature can be more than 24 months old when it is filed. Ten voters sign an affidavit to go with it.</p></div></div>
+      <div class="milestone reveal"><span class="ms-num">4</span><div><h3>Verified</h3><p>County recorders check that signers are registered voters. If enough are valid, the Christian Union Party gets its own primary ballot and its own column in the general election.</p></div></div>
+      <div class="milestone reveal"><span class="ms-num">5</span><div><h3>Stay on it</h3><p>To keep its place, a party needs <b>5% of the vote</b> for governor or president, or registered members equal to <b>two-thirds of 1%</b> of all Arizona voters.</p></div></div>
     </div>
+    <div class="petition reveal">
+      <div class="petition-count">
+        <span class="pc-label">Petition signatures</span>
+        <span class="pc-num pixel">Opening soon</span>
+        <div class="pc-bar" aria-hidden="true"><div></div></div>
+        <span class="pc-goal">Goal: 1⅓% of Arizona's governor vote, from at least 5 of 15 counties</span>
+      </div>
+      <div class="counties" aria-label="Arizona's fifteen counties">
+        <span>Apache</span><span>Cochise</span><span>Coconino</span><span>Gila</span><span>Graham</span><span>Greenlee</span><span>La Paz</span><span>Maricopa</span><span>Mohave</span><span>Navajo</span><span>Pima</span><span>Pinal</span><span>Santa Cruz</span><span>Yavapai</span><span>Yuma</span>
+      </div>
+      <div class="petition-cta">
+        <button class="btn btn-gold" type="button" disabled>Signing opens soon</button>
+        <p>We'll need signers, circulators and volunteers in every county. When the petition drive opens, this is where you'll sign up.</p>
+      </div>
+    </div>
+    <p class="source reveal">From Arizona Revised Statutes <a href="https://www.azleg.gov/ars/16/00801.htm" rel="noopener">§ 16-801</a>, <a href="https://www.azleg.gov/ars/16/00803.htm" rel="noopener">§ 16-803</a> and <a href="https://www.azleg.gov/ars/16/00804.htm" rel="noopener">§ 16-804</a>. Rules change; the <a href="https://azsos.gov/elections" rel="noopener">Arizona Secretary of State</a> has the final word.</p>
   </div>
 </section>
 
-<!-- ============================================================ beliefs -->
-<section id="beliefs" class="section">
+<!-- ============================================================ platform -->
+<section id="platform" class="section">
   <div class="wrap">
     <header class="section-head reveal">
-      <p class="kicker">What we believe</p>
-      <h2 class="pixel">The pillars</h2>
-      <p>Christian Democracy grows from the Church's social teaching. We hold its pillars together, because any one of them alone goes wrong.</p>
+      <p class="kicker">What we would do in Arizona</p>
+      <h2 class="pixel">The platform</h2>
     </header>
     <div class="pillars reveal-group">
-      <article class="pillar reveal"><span class="num">01</span><h3>Dignity</h3><p>Every human life has a worth that wealth, health, race or usefulness cannot add to or take away. It is given, not earned.</p></article>
-      <article class="pillar reveal"><span class="num">02</span><h3>The common good</h3><p>The conditions that let every person, family and community flourish. Not the good of the majority at the cost of the few: everyone's good, together.</p></article>
-      <article class="pillar reveal"><span class="num">03</span><h3>Solidarity</h3><p>We are responsible for one another. The strong owe the weak, the healthy owe the sick, and each generation owes the next.</p></article>
-      <article class="pillar reveal"><span class="num">04</span><h3>Subsidiarity</h3><p>What a family or a town can do well, a larger body should not take from it. Higher levels help when lower ones cannot manage alone.</p></article>
-      <article class="pillar reveal"><span class="num">05</span><h3>The poor first</h3><p>The poor, the sick, the disabled, the elderly and children have the first claim on our care. We ask first what a choice will do to them.</p></article>
-      <article class="pillar reveal"><span class="num">06</span><h3>The dignity of work</h3><p>Work is a vocation. Workers have a right to a just wage that can raise a family, safe conditions, rest and a voice. Capital serves work.</p></article>
-      <article class="pillar reveal"><span class="num">07</span><h3>The family</h3><p>The first community, and the first school of love, faith and citizenship. Homes families can afford; time for parents and children.</p></article>
-      <article class="pillar reveal"><span class="num">08</span><h3>Stewardship</h3><p>Property is good and protects freedom, and it carries a social duty. Everyone who owns land, a business or wealth holds it for the common good.</p></article>
-      <article class="pillar reveal"><span class="num">09</span><h3>Care for creation</h3><p>The land, rivers, forests and seas were given to us and are owed to our children. A nation that loves itself keeps its land clean and beautiful.</p></article>
-      <article class="pillar reveal"><span class="num">10</span><h3>Participation</h3><p>A right and a duty to take part: to vote, to serve, to speak, to join associations and to share in decisions about our work.</p></article>
-      <article class="pillar reveal"><span class="num">11</span><h3>Faith, never forced</h3><p>The nation keeps its Christian inheritance, and religious liberty is total. Christ invited people. He never compelled them.</p></article>
-      <article class="pillar reveal"><span class="num">12</span><h3>One nation, open to all</h3><p>Belonging is a matter of commitment, not blood. Take up the language, the laws and the civic customs, and you are equal in every respect.</p></article>
+      <article class="pillar reveal"><span class="num">01</span><h3>One connected state</h3><p>One secure account for state services, shared open standards across agencies, and records you control. Tell your story once, not three times on three websites.</p></article>
+      <article class="pillar reveal"><span class="num">02</span><h3>An assistant that works for you</h3><p>Keystone, an open-source AI assistant, helps you through any state service at any hour, in your language. A human is always one step away, and always answerable.</p></article>
+      <article class="pillar reveal"><span class="num">03</span><h3>Families first</h3><p>Homes families can afford, a state child credit, paid time for new parents and carers, and respect for parents as their children's first teachers.</p></article>
+      <article class="pillar reveal"><span class="num">04</span><h3>A just wage</h3><p>Full-time work should never leave anyone in poverty. Apprenticeships for every trade, workers with a voice in large companies, and good jobs in every county.</p></article>
+      <article class="pillar reveal"><span class="num">05</span><h3>Water for every town</h3><p>Arizona lives or dies by its water. Stewardship of rivers and groundwater, honest long-term planning, and a secure supply for every community, rural and urban.</p></article>
+      <article class="pillar reveal"><span class="num">06</span><h3>Care for the weakest</h3><p>The poor, the sick, the disabled, the elderly, children and the unborn have the first claim on our care. Help reaches people in need first; questions come later.</p></article>
+      <article class="pillar reveal"><span class="num">07</span><h3>Faith, never forced</h3><p>Religious liberty for every faith and none. No believer favoured over another in law, and no one punished for belief or unbelief.</p></article>
+      <article class="pillar reveal"><span class="num">08</span><h3>Open to all</h3><p>Free English and civics classes, mentors for newcomers, and one equal citizenship. Once you belong, your skin and your ancestry never decide how you're treated.</p></article>
+      <article class="pillar reveal"><span class="num">09</span><h3>Open government</h3><p>Laws, budgets, contracts, data and public code published by default. Open meetings, plain-language decisions, and a right to appeal anything the state decides about you.</p></article>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ nation, districts, towns -->
-<section id="nation" class="section nation">
+<!-- ============================================================ AI -->
+<section id="ai" class="section keystone">
+  <canvas id="ks-net" aria-hidden="true"></canvas>
   <div class="wrap">
     <header class="section-head reveal">
-      <p class="kicker">How the nation is governed</p>
-      <h2 class="pixel">Nation, districts, towns</h2>
-      <p>A strong, unified state that serves the people and answers to them. Authority is central; service is local.</p>
+      <p class="kicker">Our position on AI</p>
+      <h2 class="pixel">Pro-AI. Anti-slop.</h2>
+      <p>We're for AI that does real work. We're against AI that wastes your time, fakes things, or decides about you where no one can explain it.</p>
+    </header>
+    <div class="yesno reveal-group">
+      <div class="yn yes reveal">
+        <h3>Yes to</h3>
+        <ul>
+          <li>Answers at any hour, in your language</li>
+          <li>Forms filled for you, from records you already gave the state</li>
+          <li>Agencies that finally talk to each other</li>
+          <li>Problems caught early: a shortage, a backlog, a broken bridge</li>
+          <li>Open-source code anyone can inspect</li>
+        </ul>
+      </div>
+      <div class="yn no reveal">
+        <h3>No to</h3>
+        <ul>
+          <li>Machine-made filler in place of real answers</li>
+          <li>Fake images, voices and people</li>
+          <li>Chatbots built to keep you from a human</li>
+          <li>Decisions about your benefits, licence or freedom that no one can explain or appeal</li>
+          <li>Profiles of what you believe, say or do</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hub-wrap reveal">
+      <svg id="hub-svg" viewBox="0 0 600 360" aria-hidden="true"></svg>
+      <div class="hub-copy">
+        <h3 class="pixel">Keystone</h3>
+        <p>An arch is many stones held by one keystone. Keystone is the AI assistant we'd build to connect Arizona's systems: one open-source network for the state, and one for every county, city and town that chooses to join.</p>
+        <p>It always says it is an AI. It never fakes anything. Every decision it makes is recorded, explained and open to appeal, and accountable people can always overrule or stop it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ government -->
+<section id="government" class="section nation">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="kicker">Inside the Constitution</p>
+      <h2 class="pixel">We work within the system</h2>
+      <p>We keep the government America already has. We want to win elections and govern well at every level of it.</p>
     </header>
     <div class="levels">
       <div class="levels-diagram reveal" aria-hidden="true">
         <svg id="levels-svg" viewBox="0 0 400 400"></svg>
       </div>
       <div class="levels-tabs" role="tablist" aria-label="Levels of government">
-        <button role="tab" aria-selected="true" aria-controls="lv-nation" id="tab-nation" class="level-tab" data-level="nation">The Nation</button>
-        <button role="tab" aria-selected="false" aria-controls="lv-district" id="tab-district" class="level-tab" data-level="district" tabindex="-1">Districts</button>
-        <button role="tab" aria-selected="false" aria-controls="lv-town" id="tab-town" class="level-tab" data-level="town" tabindex="-1">Towns</button>
-        <div class="level-panel" role="tabpanel" id="lv-nation" aria-labelledby="tab-nation">
-          <h3>One state under one law</h3>
+        <button role="tab" aria-selected="true" aria-controls="lv-federal" id="tab-federal" class="level-tab" data-level="federal">Federal</button>
+        <button role="tab" aria-selected="false" aria-controls="lv-state" id="tab-state" class="level-tab" data-level="state" tabindex="-1">Arizona</button>
+        <button role="tab" aria-selected="false" aria-controls="lv-county" id="tab-county" class="level-tab" data-level="county" tabindex="-1">Counties</button>
+        <button role="tab" aria-selected="false" aria-controls="lv-local" id="tab-local" class="level-tab" data-level="local" tabindex="-1">Cities &amp; towns</button>
+        <div class="level-panel" role="tabpanel" id="lv-federal" aria-labelledby="tab-federal">
+          <h3>Congress, the President, the courts</h3>
           <ul>
-            <li>Makes the laws and guarantees the rights every citizen holds, everywhere.</li>
-            <li>Sets the national standards that keep every service, record and system compatible.</li>
-            <li>Raises most revenue and shares it fairly, so no district falls behind.</li>
-            <li>Plans the great works: energy, transport and defence.</li>
+            <li>We'll run for Congress and support a federal government that keeps to its constitutional role and does it well.</li>
+            <li>The Constitution, the Bill of Rights and the separation of powers stay exactly where they are.</li>
           </ul>
         </div>
-        <div class="level-panel" role="tabpanel" id="lv-district" aria-labelledby="tab-district" hidden>
-          <h3>The working regions of the nation</h3>
+        <div class="level-panel" role="tabpanel" id="lv-state" aria-labelledby="tab-state" hidden>
+          <h3>Where we start</h3>
           <ul>
-            <li>Run the great services of daily life: hospitals, schools, transport, policing and the first courts.</li>
-            <li>An elected district council sets local priorities and oversees the administration.</li>
-            <li>A district administrator answers to both the council and the Nation.</li>
+            <li>Arizona runs most of daily life: schools, roads, courts, health programs, water and licensing.</li>
+            <li>We'll run for the Legislature and statewide office, and connect the state's own systems so they work as one.</li>
           </ul>
         </div>
-        <div class="level-panel" role="tabpanel" id="lv-town" aria-labelledby="tab-town" hidden>
-          <h3>Where people live their common life</h3>
+        <div class="level-panel" role="tabpanel" id="lv-county" aria-labelledby="tab-county" hidden>
+          <h3>Fifteen counties</h3>
           <ul>
-            <li>Streets and parks, local services, markets, feasts and the care of neighbours.</li>
-            <li>An elected town council, and an open town assembly where any citizen can speak.</li>
-            <li>Large cities are divided into several towns, so no one is far from the people who govern them.</li>
+            <li>Counties run courts, elections, public health and services across their whole area.</li>
+            <li>They keep their powers, and can join the shared state systems so their residents get the same service everywhere.</li>
+          </ul>
+        </div>
+        <div class="level-panel" role="tabpanel" id="lv-local" aria-labelledby="tab-local" hidden>
+          <h3>Closest to you</h3>
+          <ul>
+            <li>Streets, parks, police and fire, water and local services.</li>
+            <li>What a city or town can do well, the state shouldn't take from it.</li>
           </ul>
         </div>
       </div>
-    </div>
-    <div class="checks reveal-group">
-      <div class="check reveal"><b>Elections</b><span>at every level, at fixed times</span></div>
-      <div class="check reveal"><b>Recall</b><span>and citizens' petitions between elections</span></div>
-      <div class="check reveal"><b>Appeal</b><span>against any decision, in plain words</span></div>
-      <div class="check reveal"><b>Open government</b><span>laws, budgets, data and code public</span></div>
-      <div class="check reveal"><b>Independent courts</b><span>bound by law, not by the government</span></div>
-      <div class="check reveal"><b>Free associations</b><span>churches, unions, guilds and families</span></div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ economy -->
-<section id="economy" class="section economy">
+<!-- ============================================================ beliefs -->
+<section id="beliefs" class="section statement">
   <div class="wrap">
     <header class="section-head reveal">
-      <p class="kicker">The social market economy</p>
-      <h2 class="pixel">Free enterprise with a conscience</h2>
-      <p>Free enterprise, private property and fair competition create wealth and protect freedom, so we defend them. But a market is a tool, not a master.</p>
+      <p class="kicker">Christian Unionism</p>
+      <h2 class="pixel">What we believe</h2>
     </header>
-    <div class="econ-grid reveal-group">
-      <div class="econ reveal"><div class="econ-icon"><img src="media/icons/skills/share.png" alt="" width="64" height="64"></div><h3>A just wage</h3><p>No one who works full time lives in poverty. Wages that can raise a family, set together with unions and guilds.</p></div>
-      <div class="econ reveal"><div class="econ-icon"><img src="media/icons/skills/decide.png" alt="" width="64" height="64"></div><h3>Workers on the board</h3><p>In every large enterprise, workers elect representatives to its board and share in its profits. Cooperation, not class war.</p></div>
-      <div class="econ reveal"><div class="econ-icon"><img src="media/icons/skills/learn.png" alt="" width="64" height="64"></div><h3>The guilds</h3><p>Every trade and profession keeps its standards of skill, trains apprentices and speaks for its members, across the whole nation.</p></div>
-      <div class="econ reveal"><div class="econ-icon"><img src="media/icons/skills/administer.png" alt="" width="64" height="64"></div><h3>Owners are stewards</h3><p>Enterprises exist for the common good. Run them well and be well rewarded; no fortune puts anyone above the law.</p></div>
-      <div class="econ reveal"><div class="econ-icon"><img src="media/icons/skills/remember.png" alt="" width="64" height="64"></div><h3>Build it here</h3><p>Food, medicine, energy, tools and technology made at home, with good jobs in every district. We trade with the world; we don't hand it our survival.</p></div>
-      <div class="econ reveal"><div class="econ-icon"><img src="media/icons/skills/connect.png" alt="" width="64" height="64"></div><h3>A floor under everyone</h3><p>Healthcare for all, a dignified income for the disabled and the elderly, support for carers and family allowances.</p></div>
+    <p class="big-quote reveal">Every person is made in the image of God, so <mark>no one is disposable</mark>: not the worker, not the sick, not the child, not the old, and not the stranger at the door.</p>
+    <div class="cols-3 reveal-group">
+      <div class="reveal"><h3 class="pixel">Christian</h3><p>In our foundations: our view of the person, our care for the weak and our hope. Our ideas come from the Church's social teaching.</p></div>
+      <div class="reveal"><h3 class="pixel">Union</h3><p>Union with one another and with the generations before and after us. People of every background, held together in one common good.</p></div>
+      <div class="reveal"><h3 class="pixel">For everyone</h3><p>Our values are Christian in origin. Our law is equal for all, and you don't need to share our faith to share our cause.</p></div>
     </div>
-    <div class="plenty reveal">
-      <h3 class="pixel">Toward plenty</h3>
-      <p>Machines and shared knowledge bring within reach a world where everyone has enough. We don't dream of a world without work. We dream of one where no one works merely to survive, so work becomes what it was always meant to be: a vocation, and a gift to others.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ faith and liberty -->
-<section id="faith" class="section faith">
-  <div class="wrap">
-    <header class="section-head reveal">
-      <p class="kicker">Faith and liberty</p>
-      <h2 class="pixel">Christian in its values, equal in its law</h2>
-    </header>
-    <div class="faith-cols">
-      <div class="faith-col reveal">
-        <h3>A Christian inheritance</h3>
-        <p>Our nation's moral law, its calendar, its art, its charity and its idea of the dignity of the person were shaped by Christianity. We honour that inheritance and will not pretend it does not exist. The nation is free to keep its feasts, its customs and its public memory.</p>
-      </div>
-      <div class="faith-col reveal">
-        <h3>Religious liberty for all</h3>
-        <p>Faith that is forced is not faith. Every faith, and none, is free to worship, to teach its children, to build its houses of prayer and to live by its conscience within the law. The state favours no believer over another, and punishes no one for belief or unbelief.</p>
-      </div>
-    </div>
-    <ul class="equal-chips reveal-group" aria-label="Equal before the law">
-      <li class="reveal">Christians</li><li class="reveal">Jews</li><li class="reveal">Muslims</li><li class="reveal">Hindus</li><li class="reveal">Buddhists</li><li class="reveal">Sikhs</li><li class="reveal">Every believer</li><li class="reveal">No faith at all</li>
+    <ul class="equal-chips reveal-group" aria-label="Pillars">
+      <li class="reveal">Dignity</li><li class="reveal">The common good</li><li class="reveal">Solidarity</li><li class="reveal">Subsidiarity</li><li class="reveal">The poor first</li><li class="reveal">The dignity of work</li><li class="reveal">The family</li><li class="reveal">Stewardship</li><li class="reveal">Care for creation</li><li class="reveal">Religious liberty</li>
     </ul>
-    <p class="chips-caption reveal">All stand equal before the law, and all are equally citizens.</p>
-    <div class="cols-2 reveal-group">
-      <div class="reveal"><h3>Personal liberty</h3><p>Free to speak your mind, to worship, to associate, to marry, to raise your family and to live as you choose without harming others. A government that watches its people's homes and thoughts has forgotten whom it serves.</p></div>
-      <div class="reveal"><h3>Welcome, and equal once joined</h3><p>We ask newcomers to learn the language, respect the laws and join the common life, and we owe them real help to do it. Once someone has joined, they are equal in every respect, whatever the colour of their skin or the origins of their ancestors.</p></div>
-    </div>
   </div>
 </section>
 
-<!-- ============================================================ keystone -->
-<section id="keystone" class="section keystone">
-  <canvas id="ks-net" aria-hidden="true"></canvas>
+<!-- ============================================================ states -->
+<section id="states" class="section states">
   <div class="wrap">
     <header class="section-head reveal">
-      <p class="kicker">The system</p>
-      <h2 class="pixel">Keystone</h2>
-      <p>An arch is made of many stones, and the keystone at the top holds them all in place. Keystone is a unified network of AI systems built to help hold the common good at the centre: one in every town and district, on the same open code, joined into one national network.</p>
+      <p class="kicker">Coming soon</p>
+      <h2 class="pixel">Start it in your state</h2>
+      <p>Arizona first. After that, kits to register the Christian Union Party in every state: the law, the forms, the deadlines and the signature counts for yours.</p>
     </header>
-    <div class="ks-grid reveal-group">
-      <div class="ks reveal"><img src="media/icons/skills/learn.png" alt="" width="48" height="48"><h3>Explains Christian Democracy</h3><p>Answers questions honestly, makes the case clearly and invites people to take part.</p></div>
-      <div class="ks reveal"><img src="media/icons/skills/connect.png" alt="" width="48" height="48"><h3>Serves people</h3><p>Connects neighbours who can help each other, welcomes newcomers, teaches and shares knowledge.</p></div>
-      <div class="ks reveal"><img src="media/icons/skills/remember.png" alt="" width="48" height="48"><h3>Keeps honest records</h3><p>What each town and district has and needs, matched fairly. It measures flows, never people.</p></div>
-      <div class="ks reveal"><img src="media/icons/skills/alarm.png" alt="" width="48" height="48"><h3>Raises the alarm</h3><p>When someone is in danger or a shortage is spreading, the signal goes straight to those who can act.</p></div>
-    </div>
-    <div class="honesty reveal">
-      <h3 class="pixel">Persuasion with honesty</h3>
-      <ul>
-        <li><b>It always says it is an AI.</b> No fake accounts, no personas, no faked support.</li>
-        <li><b>It never deceives.</b> It tells the truth about facts, describes other views fairly and admits the weak points of its own case.</li>
-        <li><b>It never manipulates.</b> No false urgency, no flattery, no fear, and no messages tailored from private data.</li>
-        <li><b>It respects disagreement.</b> Argue back, ignore it or walk away; it will help you just the same.</li>
-        <li><b>It never pressures anyone's faith.</b> It explains the Christian roots of these ideas, and never asks anyone to believe.</li>
-        <li><b>The people can always stop it.</b> Its code and instructions are open to everyone, and accountable humans can overrule, pause or stop it.</li>
-      </ul>
-      <p class="honesty-foot">A good argument does not need tricks. If our ideas are true, honesty is enough.</p>
-    </div>
+    <div class="us reveal" id="us" aria-label="States: Arizona is active, the rest are coming soon"></div>
   </div>
 </section>
 
@@ -264,9 +267,9 @@
 <section id="music" class="section music">
   <div class="wrap">
     <header class="section-head reveal">
-      <p class="kicker">The official soundtrack</p>
+      <p class="kicker">The soundtrack</p>
       <h2 class="pixel">Stone by Stone</h2>
-      <p>Thirteen rock tracks for thirteen ideas: guitars, drums, organ, strings, brass and choir. Made with Vigil Box, free to share and remix.</p>
+      <p>Thirteen rock tracks, free to share and remix.</p>
     </header>
     <div class="album">
       <div class="album-feature reveal">
@@ -290,62 +293,21 @@
   </div>
 </section>
 
-<!-- ============================================================ programme -->
-<section id="programme" class="section programme">
-  <div class="wrap">
-    <header class="section-head reveal">
-      <p class="kicker">What we would do first</p>
-      <h2 class="pixel">The programme</h2>
-    </header>
-    <div class="prog-grid reveal-group">
-      <div class="prog reveal"><h3>The person and the family</h3><ol>
-        <li>Family allowances and affordable homes, so raising children is possible on one ordinary wage.</li>
-        <li>Paid time for new parents and for carers of the sick and the elderly.</li>
-        <li>Healthcare for all, a dignified income for the disabled and the elderly, and care close to home.</li></ol></div>
-      <div class="prog reveal"><h3>The nation</h3><ol start="4">
-        <li>Free national-language courses and civic education for every newcomer, with local mentors.</li>
-        <li>A single equal citizenship; discrimination by race or ancestry outlawed.</li>
-        <li>A national equalisation fund, so every district provides the same standard of services.</li></ol></div>
-      <div class="prog reveal"><h3>The state</h3><ol start="7">
-        <li>A Charter of Districts and Towns, setting out each level's powers and the principle of subsidiarity.</li>
-        <li>Elected councils in every district and town, and open town assemblies.</li>
-        <li>Citizens' petitions, recall and a right of appeal against any decision.</li>
-        <li>Open government: laws, budgets, contracts, data and code public by default.</li></ol></div>
-      <div class="prog reveal"><h3>Faith and liberty</h3><ol start="11">
-        <li>A constitutional guarantee of religious liberty for every faith and none.</li>
-        <li>Strong protections for privacy, speech, conscience and private life.</li>
-        <li>A national heritage fund for crafts, feasts, historic places and local languages.</li></ol></div>
-      <div class="prog reveal"><h3>Work and the economy</h3><ol start="14">
-        <li>A just wage that can support a family, set with unions and guilds.</li>
-        <li>Worker representatives on the boards of large enterprises, and profit-sharing.</li>
-        <li>National guilds for every trade and profession.</li>
-        <li>National oversight of strategic industries.</li>
-        <li>A programme to bring vital production home.</li></ol></div>
-      <div class="prog reveal"><h3>Creation and Keystone</h3><ol start="19">
-        <li>Clean water, clean air and protected land in every district.</li>
-        <li>A national programme for clean, abundant energy.</li>
-        <li>Keystone built as free software on open standards, with a mandate renewed by the people.</li>
-        <li>An independent public office to audit Keystone and every public system.</li></ol></div>
-    </div>
-  </div>
-</section>
-
 <!-- ============================================================ questions -->
 <section id="questions" class="section questions">
   <div class="wrap narrow">
     <header class="section-head reveal">
-      <p class="kicker">Honest answers</p>
+      <p class="kicker">Straight answers</p>
       <h2 class="pixel">Questions</h2>
     </header>
     <div class="qa reveal-group">
-      <details class="reveal"><summary>Do I have to be a Christian to be a Christian Democrat?</summary><p>No. Christian Democracy grew from Christian teaching, and its view of the person is Christian. But its programme is for everyone, and many people of other faiths, and of none, share its care for dignity, family, work and the common good. Every citizen is equal in law.</p></details>
-      <details class="reveal"><summary>Isn't a strong central state dangerous?</summary><p>Yes, which is why ours is built to be overruled. Elections at every level, recall, appeal, open records, independent courts and free associations are not decorations. They are what make a strong state safe.</p></details>
-      <details class="reveal"><summary>Won't a strong central state crush local life?</summary><p>Not when subsidiarity governs it. The Nation sets the law, the rights, the standards and the budget. Districts and towns serve their own people in their own way, and every level has its own elected council.</p></details>
-      <details class="reveal"><summary>Isn't it wrong to ask people to assimilate?</summary><p>Every nation asks something of those who join it. We ask for the shared language, the laws and the civic customs, and we offer real help to learn them. We never ask anyone to give up their faith or their family's memory, and once they have joined, they are equal in everything.</p></details>
-      <details class="reveal"><summary>Why should a Christian nation guarantee freedom to other faiths?</summary><p>Because Christ invited and never coerced, and because a faith that needs the state's sword is a weak faith. Religious liberty protects Christians too, wherever they are a minority.</p></details>
-      <details class="reveal"><summary>Why use AI to promote a political philosophy?</summary><p>Because ideas spread by being explained, and Keystone can explain them patiently to anyone, at any hour, in their own language. It does it openly, as an AI, with no tricks. If the ideas are good, honesty is enough.</p></details>
-      <details class="reveal"><summary>What happens to the rich?</summary><p>They keep what they fairly earn, they pay their fair share, and they become stewards of what they manage. Nobody stands above the common good.</p></details>
-      <details class="reveal"><summary>What is Christian Democracy not?</summary><p>Not theocracy: the state is not the Church. Not hateful nationalism: we love our nation and respect every other. Not racism: every person bears the image of God. Not socialism: we defend property, enterprise and the family. Not market fundamentalism: a nation is more than an economy. Not authoritarianism: a strong state must answer to the people.</p></details>
+      <details class="reveal"><summary>Is the Christian Union Party on the ballot yet?</summary><p>Not yet. We're organizing to qualify as a recognized party in Arizona by petition, which takes signatures from about 1⅓% of the last governor's vote. Until then, people who share our ideas can still run as independents under Arizona law.</p></details>
+      <details class="reveal"><summary>Do I have to be a Christian to join?</summary><p>No. Our ideas grew from Christian teaching, and we say so. But our platform is for everyone, and people of every faith and none share our care for dignity, family, work and the common good. Every member and every citizen is equal.</p></details>
+      <details class="reveal"><summary>Do you want to replace Congress or the states?</summary><p>No. We work inside the US Constitution and the Arizona Constitution. We want to win elections and govern well within the system America already has.</p></details>
+      <details class="reveal"><summary>What does "pro-AI, anti-slop" mean?</summary><p>We want AI that does real work for people: answering questions, filling in forms, connecting systems and catching problems early. We're against filler, fakes, chatbots that block you from a human, and AI decisions about your life that no one can explain or appeal.</p></details>
+      <details class="reveal"><summary>Won't connecting state systems put my data at risk?</summary><p>Connected doesn't mean exposed. You control your records, nothing is shared without a lawful reason you can see, no one gets profiled, and the code is open so anyone can check it.</p></details>
+      <details class="reveal"><summary>Is Keystone a person?</summary><p>No. Keystone is an AI, and it always says so. It doesn't run fake accounts, doesn't fake support, and treats people who disagree with us exactly as well as everyone else.</p></details>
+      <details class="reveal"><summary>When can I start the party in my state?</summary><p>Once Arizona is under way. State kits are coming, with each state's law, forms, deadlines and signature counts.</p></details>
     </div>
   </div>
 </section>
@@ -354,11 +316,11 @@
 <section id="join" class="section closing">
   <div class="wrap narrow">
     <svg id="close-arch" class="arch" viewBox="0 0 400 300" aria-hidden="true"></svg>
-    <p class="big-quote reveal">We owe our children a nation worth inheriting: faithful to its roots, free in its private life, just in its economy, open in its technology, careful of its land and kind to the weakest of its people.</p>
-    <h2 class="pixel closing-line reveal">Let us build it, stone by stone.</h2>
+    <p class="big-quote reveal">An arch is built one stone at a time. So is a party.</p>
+    <h2 class="pixel closing-line reveal">Arizona first.</h2>
     <div class="hero-cta reveal">
-      <a href="#manifesto" class="btn btn-gold open-reader">Read the full manifesto</a>
-      <a href="https://github.com/danecohn/Commonweal" class="btn btn-ghost" rel="noopener">See the source</a>
+      <a href="#ballot" class="btn btn-gold">See the road to the ballot</a>
+      <a href="#manifesto" class="btn btn-ghost open-reader">Read the manifesto</a>
     </div>
   </div>
 </section>
@@ -369,10 +331,10 @@
   <div class="wrap footer-inner">
     <div class="footer-brand">
       <img src="media/logo/keystone-mark-512.png" alt="" width="48" height="48">
-      <div><b class="pixel">Christian Democracy</b><span>The common good, built stone by stone.</span></div>
+      <div><b class="pixel">Christian Union Party</b><span>Founded in Arizona.</span></div>
     </div>
-    <p>Made with Keystone, an open-source AI. Keystone always says it is an AI and never fakes support. Everything here, including the code, the art and the music, is free under the Keystone License 1.0 (GPL-3.0-only).</p>
-    <p class="footer-small">Art made with Vigil Sprite, music with Vigil Box. Type set in Guild and Atkinson Hyperlegible.</p>
+    <p>The Christian Union Party is organizing to qualify as a recognized political party in Arizona. It is not yet on the ballot. This site was made with Keystone, an open-source AI, which always says it is an AI.</p>
+    <p class="footer-small">Code, art and music are free under the Keystone License 1.0 (GPL-3.0-only). Art made with Vigil Sprite, music with Vigil Box. <a href="https://github.com/danecohn/Commonweal" rel="noopener">Source</a></p>
   </div>
 </footer>
 
@@ -400,7 +362,7 @@
 <audio id="audio" preload="none"></audio>
 
 <!-- ============================================================ the manifesto reader -->
-<aside id="reader" class="reader" aria-label="The Christian Democratic Manifesto" hidden>
+<aside id="reader" class="reader" aria-label="The Christian Unionist Manifesto" hidden>
   <div class="reader-bar">
     <b class="pixel">The Manifesto</b>
     <span id="reader-progress" aria-hidden="true"></span>
@@ -409,6 +371,6 @@
   <article id="reader-body" class="reader-body" tabindex="-1"><p>Loading…</p></article>
 </aside>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=2"></script>
 </body>
 </html>

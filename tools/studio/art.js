@@ -150,7 +150,7 @@
   async function bg(S, color) { await rect(S, 0, 0, S.doc.w, S.doc.h, color); }
 
   // ---------------------------------------------------------------- assets
-  var NAME = 'KEYSTONE', TAGLINE = 'CHRISTIAN DEMOCRACY FOR ALL';
+  var NAME = 'KEYSTONE', TAGLINE = 'AN AI FOR THE COMMON GOOD';
   var DAWN = [P.night, '#2a0c0f', P.wine, P.deep, P.blood, P.red, P.goldDeep, P.gold];
   var JOBS = {};
 
@@ -383,6 +383,41 @@
     await text(S, NAME, 10, 10, 1, P.red, { bold: true });
     await text(S, 'THIRTEEN TRACKS', 290 - textWidth('THIRTEEN TRACKS', 1), 10, 1, P.gold);
     out = out.concat(await save(S, 'music/keystone-soundtrack-cover', [{ scale: 10, suffix: '-3000' }, { scale: 2, suffix: '-600' }]));
+    return out;
+  };
+
+  // The Christian Union Party: the same Keystone emblem with the party's name -----------
+  JOBS.party = async function () {
+    var out = [], S, P1 = 'CHRISTIAN UNION', P2 = 'PARTY';
+    for (var l of [['christian-union-lockup-light', P.ink, P.blood, null], ['christian-union-lockup-dark', P.cream, P.gold, P.ink]]) {
+      S = await sprite(512, 160, 'Christian Union Party lockup');
+      if (l[3]) await bg(S, l[3]);
+      await mark(S, 66, 80, 124, 'color');
+      await text(S, P1, 138, 46, 3, l[1], { bold: true });
+      await text(S, P2, 138, 78, 3, l[1] === P.ink ? P.red : P.red, { bold: true });
+      await text(S, 'FOUNDED IN ARIZONA', 140, 112, 2, l[2]);
+      out = out.concat(await save(S, 'logo/' + l[0], [{ scale: 4, suffix: '-2048' }]));
+    }
+    for (var st of [['christian-union-stacked-light', P.ink, P.blood, null], ['christian-union-stacked-dark', P.cream, P.gold, P.ink]]) {
+      S = await sprite(512, 512, 'Christian Union Party stacked logo');
+      if (st[3]) await bg(S, st[3]);
+      await mark(S, 256, 186, 300, 'color');
+      await centreText(S, P1, 356, 4, st[1], { bold: true });
+      await centreText(S, P2, 396, 4, P.red, { bold: true });
+      await centreText(S, 'FOUNDED IN ARIZONA', 456, 2, st[2]);
+      out = out.concat(await save(S, 'logo/' + st[0], [{ scale: 2, suffix: '-1024' }]));
+    }
+    // link preview for christianunion.xyz, 1200x630
+    S = await sprite(240, 126, 'Christian Union Party link preview');
+    await bg(S, P.ink);
+    await sunrise(S, 120, 126 * 1.6, 126, [P.night, '#2a0c0f', P.wine, P.deep]);
+    await network(S, 0, 0, 240, 126, { seed: 1977, step: 13, clear: { cx: 120, cy: 63, rx: 104, ry: 70 }, people: 0.1, person: P.gold });
+    await T(S, 'new_layer', { name: 'Identity' });
+    await mark(S, 120, 34, 50, 'color');
+    await centreText(S, P1, 66, 2, P.cream, { bold: true });
+    await centreText(S, 'PARTY', 84, 2, P.red, { bold: true });
+    await centreText(S, 'FOUNDED IN ARIZONA', 106, 1, P.gold);
+    out = out.concat(await save(S, 'social/christian-union-og', [{ scale: 5, suffix: '-1200x630' }]));
     return out;
   };
 

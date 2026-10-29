@@ -24,7 +24,7 @@ FAMILY = "Guild"
 COPYRIGHT = "Copyright 2026 The Keystone contributors"
 LICENSE = "Keystone License 1.0: GNU General Public License, version 3 only. See LICENSE at the repository root."
 LICENSE_URL = "https://www.gnu.org/licenses/gpl-3.0.html"
-DESCRIPTION = ("Guild, the typeface of Keystone and Christian Democracy. Named for the guilds: "
+DESCRIPTION = ("Guild, the typeface of Keystone and Christian Unionism. Named for the guilds: "
                "good work, honest craft and shared standards.")
 
 

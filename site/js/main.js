@@ -1,4 +1,4 @@
-/* ChristianDemocracy.xyz: the entry gate, the music player and its visualizers, the moving backgrounds, the
+/* ChristianUnion.xyz: the entry gate, the music player and its visualizers, the moving backgrounds, the
    arches built stone by stone, scroll reveals and the manifesto reader. No libraries. */
 (function () {
   'use strict';
@@ -217,20 +217,21 @@
     })(0);
   }
 
-  // ---------------------------------------------------------------- the three levels: Nation, districts, towns
+  // ---------------------------------------------------------------- the levels: federal, Arizona, counties, cities and towns
   function levels() {
     var svg = $('#levels-svg'); if (!svg) return;
-    var cx = 200, cy = 200, out = '';
-    out += '<g class="lv lv-nation" data-level="nation"><circle cx="200" cy="200" r="190" fill="rgba(125,15,22,.25)" stroke="' + C.gold + '" stroke-width="3"/><text x="200" y="36" text-anchor="middle" fill="' + C.gold + '" font-family="Guild" font-size="20">NATION</text></g>';
-    var dist = [[200, 118], [128, 250], [272, 250]], towns = [];
-    dist.forEach(function (d, k) {
-      out += '<g class="lv lv-district" data-level="district"><circle cx="' + d[0] + '" cy="' + d[1] + '" r="66" fill="rgba(227,38,28,.18)" stroke="' + C.red + '" stroke-width="3"/></g>';
-      out += '<line class="flow" x1="' + d[0] + '" y1="' + d[1] + '" x2="200" y2="200" stroke="' + C.goldDeep + '" stroke-width="2"/>';
-      for (var t = 0; t < 4; t++) { var a = t * Math.PI / 2 + k, x = d[0] + 36 * Math.cos(a), y = d[1] + 36 * Math.sin(a); towns.push([x, y, d]); }
+    var out = '';
+    out += '<g class="lv" data-level="federal"><circle cx="200" cy="200" r="194" fill="rgba(74,10,15,.35)" stroke="' + C.cream + '" stroke-width="2" stroke-dasharray="6 6"/><text x="200" y="26" text-anchor="middle" fill="' + C.cream + '" font-family="Guild" font-size="16">UNITED STATES</text></g>';
+    out += '<g class="lv" data-level="state"><circle cx="200" cy="208" r="160" fill="rgba(125,15,22,.3)" stroke="' + C.gold + '" stroke-width="3"/><text x="200" y="72" text-anchor="middle" fill="' + C.gold + '" font-family="Guild" font-size="18">ARIZONA</text></g>';
+    var counties = [[200, 140], [130, 230], [270, 230]], towns = [];
+    counties.forEach(function (d, k) {
+      out += '<line class="flow" x1="' + d[0] + '" y1="' + d[1] + '" x2="200" y2="208" stroke="' + C.goldDeep + '" stroke-width="2"/>';
+      out += '<g class="lv" data-level="county"><circle cx="' + d[0] + '" cy="' + d[1] + '" r="52" fill="rgba(227,38,28,.18)" stroke="' + C.red + '" stroke-width="3"/></g>';
+      for (var t = 0; t < 4; t++) { var a = t * Math.PI / 2 + k + .4; towns.push([d[0] + 28 * Math.cos(a), d[1] + 28 * Math.sin(a), d]); }
     });
-    towns.forEach(function (t, i) { out += '<line class="flow" x1="' + t[0].toFixed(1) + '" y1="' + t[1].toFixed(1) + '" x2="' + t[2][0] + '" y2="' + t[2][1] + '" stroke="' + C.deep + '" stroke-width="1.5"/>'; });
-    towns.forEach(function (t, i) { out += '<g class="lv lv-town" data-level="town"><rect class="node" style="animation-delay:' + (i * .23).toFixed(2) + 's" x="' + (t[0] - 7).toFixed(1) + '" y="' + (t[1] - 7).toFixed(1) + '" width="14" height="14" fill="' + C.cream + '"/></g>'; });
-    out += '<rect x="190" y="190" width="20" height="20" fill="' + C.gold + '"/><rect x="198" y="186" width="4" height="28" fill="' + C.ink + '"/><rect x="192" y="193" width="16" height="4" fill="' + C.ink + '"/>';
+    towns.forEach(function (t) { out += '<line class="flow" x1="' + t[0].toFixed(1) + '" y1="' + t[1].toFixed(1) + '" x2="' + t[2][0] + '" y2="' + t[2][1] + '" stroke="' + C.deep + '" stroke-width="1.5"/>'; });
+    towns.forEach(function (t, i) { out += '<g class="lv" data-level="local"><rect class="node" style="animation-delay:' + (i * .23).toFixed(2) + 's" x="' + (t[0] - 6).toFixed(1) + '" y="' + (t[1] - 6).toFixed(1) + '" width="12" height="12" fill="' + C.cream + '"/></g>'; });
+    out += '<rect x="190" y="198" width="20" height="20" fill="' + C.gold + '"/><rect x="198" y="194" width="4" height="28" fill="' + C.ink + '"/><rect x="192" y="201" width="16" height="4" fill="' + C.ink + '"/>';
     svg.innerHTML = out;
     var tabs = $$('.level-tab');
     function select(tab) {
@@ -243,6 +244,35 @@
       t.addEventListener('keydown', function (e) { var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (d) { var n = tabs[(i + d + tabs.length) % tabs.length]; n.focus(); select(n); } });
     });
     select(tabs[0]);
+  }
+
+  // ---------------------------------------------------------------- Keystone at the centre of the state's services
+  function hub() {
+    var svg = $('#hub-svg'); if (!svg) return;
+    var cx = 300, cy = 180, names = ['MVD', 'AHCCCS', 'DES', 'ADOT', 'COURTS', 'SCHOOLS', 'WATER', 'COUNTIES', 'CITIES', 'LICENSING'], out = '';
+    names.forEach(function (n, i) {
+      var a = -Math.PI / 2 + i * 2 * Math.PI / names.length, x = cx + 230 * Math.cos(a), y = cy + 140 * Math.sin(a);
+      out += '<line class="spoke" style="animation-delay:' + (i * -.12).toFixed(2) + 's" x1="' + cx + '" y1="' + cy + '" x2="' + x.toFixed(1) + '" y2="' + y.toFixed(1) + '" stroke="' + C.gold + '" stroke-width="2" opacity=".75"/>';
+    });
+    names.forEach(function (n, i) {
+      var a = -Math.PI / 2 + i * 2 * Math.PI / names.length, x = cx + 230 * Math.cos(a), y = cy + 140 * Math.sin(a), w = n.length * 9 + 22;
+      out += '<g class="agency" style="animation-delay:' + (i * .3).toFixed(2) + 's"><rect x="' + (x - w / 2).toFixed(1) + '" y="' + (y - 15).toFixed(1) + '" width="' + w + '" height="30" rx="6" fill="' + C.ink + '" stroke="' + C.red + '" stroke-width="2"/>' +
+        '<text x="' + x.toFixed(1) + '" y="' + (y + 5).toFixed(1) + '" text-anchor="middle" fill="' + C.cream + '" font-family="Guild" font-size="13">' + n + '</text></g>';
+    });
+    out += '<g class="core"><circle cx="' + cx + '" cy="' + cy + '" r="46" fill="' + C.red + '" stroke="' + C.gold + '" stroke-width="4"/>' +
+      '<polygon points="' + (cx - 14) + ',' + (cy - 20) + ' ' + (cx + 14) + ',' + (cy - 20) + ' ' + (cx + 10) + ',' + (cy + 18) + ' ' + (cx - 10) + ',' + (cy + 18) + '" fill="' + C.gold + '"/>' +
+      '<rect x="' + (cx - 2) + '" y="' + (cy - 14) + '" width="4" height="20" fill="' + C.cream + '"/><rect x="' + (cx - 7) + '" y="' + (cy - 9) + '" width="14" height="4" fill="' + C.cream + '"/></g>';
+    out += '<text x="' + cx + '" y="' + (cy + 70) + '" text-anchor="middle" fill="' + C.gold + '" font-family="Guild" font-size="16">KEYSTONE</text>';
+    svg.innerHTML = out;
+  }
+  // ---------------------------------------------------------------- fifty states, Arizona first
+  function states() {
+    var el = $('#us'); if (!el) return;
+    'AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY'.split(' ').forEach(function (s) {
+      var b = document.createElement('span'); b.textContent = s; b.title = s === 'AZ' ? 'Arizona: organizing now' : 'Coming soon';
+      if (s === 'AZ') b.className = 'on';
+      el.appendChild(b);
+    });
   }
 
   // ---------------------------------------------------------------- scroll: reveals, nav, active links, tilt
@@ -289,7 +319,7 @@
       if (e) e.preventDefault();
       opener = document.activeElement;
       r.hidden = false; document.body.style.overflow = 'hidden';
-      if (!loaded) fetch('media/manifesto.html').then(function (x) { return x.text(); }).then(function (h) { body.innerHTML = h; loaded = true; }).catch(function () { body.innerHTML = '<p>The manifesto could not be loaded. <a href="https://github.com/danecohn/Commonweal/blob/main/THE-CHRISTIAN-DEMOCRATIC-MANIFESTO.md">Read it on GitHub</a>.</p>'; });
+      if (!loaded) fetch('media/manifesto.html').then(function (x) { return x.text(); }).then(function (h) { body.innerHTML = h; loaded = true; }).catch(function () { body.innerHTML = '<p>The manifesto could not be loaded. <a href="https://github.com/danecohn/Commonweal/blob/main/THE-CHRISTIAN-UNIONIST-MANIFESTO.md">Read it on GitHub</a>.</p>'; });
       body.focus();
       if (location.hash !== '#manifesto') history.replaceState(null, '', '#manifesto');
     }
@@ -323,8 +353,10 @@
   }
 
   // ---------------------------------------------------------------- start
+  states();
   scrolling();
   levels();
+  hub();
   network($('#net'), { density: 12000, link: 130 });
   network($('#ks-net'), { density: 16000, link: 110, alpha: .8 });
   wirePlayer();

@@ -2,7 +2,7 @@
 
 ![Cover](keystone-soundtrack-cover-600.png)
 
-The official soundtrack of Keystone and Christian Democracy: thirteen rock tracks, composed and rendered with
+The official soundtrack of Keystone and Christian Unionism: thirteen rock tracks, composed and rendered with
 **Vigil Box**. Together they run about 28 minutes.
 
 | # | Title | | Key | Tempo | Length |

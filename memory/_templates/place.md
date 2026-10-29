@@ -1,18 +1,18 @@
 ---
 name: place-slug
-description: One line naming the town or district
+description: One line naming the state, county, city or town
 type: place
-source: The town or district council, or its published charter
+source: The government's own published records or charter
 recorded: YYYY-MM-DD
 ---
 
-**Level:** town / district
+**Level:** state / county / city / town
 
-**Part of:** [[district-slug]] (for a town, the district it belongs to)
+**Part of:** [[county-slug]] (the next level up)
 
 **Council:** how it is elected, and its public contact
 
-**Powers it holds:** what it decides for itself under the Charter of Districts and Towns
+**Powers it holds:** what it decides for itself under its state constitution and laws
 
 **Keystone mandate here:** any administrative tasks its council has granted Keystone (see governance/mandate.md)
 
