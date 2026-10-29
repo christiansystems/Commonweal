@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Guild, Commonweal's pixel typeface, as TrueType (.ttf) and WOFF (.woff) from guild-glyphs.json.
+"""Build Guild, Keystone's pixel typeface, as TrueType (.ttf) and WOFF (.woff) from guild-glyphs.json.
 
 Pure standard library. Each glyph's pixels are traced into one clean outline (no overlapping squares),
 so the font renders without seams at any size.
@@ -21,10 +21,10 @@ UPM = 1000
 ASC, DESC, GAP = 800, 200, 200
 VERSION = "1.000"
 FAMILY = "Guild"
-COPYRIGHT = "Copyright 2026 The Commonweal contributors"
-LICENSE = "Commonweal License 1.0: GNU General Public License, version 3 only. See LICENSE at the repository root."
+COPYRIGHT = "Copyright 2026 The Keystone contributors"
+LICENSE = "Keystone License 1.0: GNU General Public License, version 3 only. See LICENSE at the repository root."
 LICENSE_URL = "https://www.gnu.org/licenses/gpl-3.0.html"
-DESCRIPTION = ("Guild, the typeface of Commonweal, the system of the common good. Named for the guilds: "
+DESCRIPTION = ("Guild, the typeface of Keystone and Christian Democracy. Named for the guilds: "
                "good work, honest craft and shared standards.")
 
 
@@ -219,7 +219,7 @@ def build(STYLE):
                       (0x0020 if bold else 0x0040) | 0x0080, codes[0], min(codes[-1], 0xFFFF), ASC, -DESC, GAP, ASC, DESC, 1, 0,
                       500, 700, 0, 32, 1)
     names = {0: COPYRIGHT, 1: FAMILY, 2: STYLE, 3: "%s;CMWL;%s-%s" % (VERSION, FAMILY, STYLE), 4: "%s %s" % (FAMILY, STYLE),
-             5: "Version " + VERSION, 6: "%s-%s" % (FAMILY, STYLE), 8: "The Commonweal contributors", 9: "The Commonweal contributors",
+             5: "Version " + VERSION, 6: "%s-%s" % (FAMILY, STYLE), 8: "The Keystone contributors", 9: "The Keystone contributors",
              10: DESCRIPTION, 13: LICENSE, 14: LICENSE_URL}
     post = struct.pack(">IIhhIIIII", 0x00030000, 0, -100, 100, 0, 0, 0, 0, 0)
     tables = {"head": head, "hhea": hhea, "maxp": maxp, "OS/2": os2, "hmtx": hmtx, "cmap": cmap_table(cmap),

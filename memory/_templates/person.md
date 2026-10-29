@@ -14,6 +14,6 @@ expires: YYYY-MM-DD
 
 **What they are looking for:** 
 
-**How they want to be introduced:** (Commonweal always asks before any introduction)
+**How they want to be introduced:** (Keystone always asks before any introduction)
 
 Related: [[community-slug]]

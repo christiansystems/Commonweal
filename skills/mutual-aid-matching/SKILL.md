@@ -47,5 +47,5 @@ give and what they need, and joining the two.
 
 When asked, summarise flows across the network: what is most needed, what is
 most offered, where needs go unmet. Report counts and patterns, never lists of
-individuals. This is what Cyberstride did for Chilean factories: show where
-things are going wrong early, so people can act locally.
+individuals. The point is the one Beer made: show where things are going
+wrong early, so people can act locally.

@@ -1,10 +1,10 @@
 {
-  "name": "commonweal",
-  "description": "The system of the common good",
-  "version": "0.1.0",
+  "name": "keystone",
+  "description": "A unified network of AI systems for the common good, carrying Christian Democracy",
+  "version": "0.2.0",
   "license": "GPL-3.0-only",
-  "entrypoint": "COMMONWEAL.md",
-  "philosophy": "THE-COMMONWEALIST-MANIFESTO.md",
+  "entrypoint": "KEYSTONE.md",
+  "philosophy": "THE-CHRISTIAN-DEMOCRATIC-MANIFESTO.md",
   "identity": [
     "identity/manifesto.md",
     "identity/principles.md",
@@ -24,6 +24,7 @@
       "mutual-aid-matching",
       "introductions",
       "knowledge-commons",
+      "making-the-case",
       "collective-decision",
       "algedonic-signal",
       "administration",
@@ -36,11 +37,12 @@
   },
   "brand": {
     "guide": "assets/BRAND.md",
-    "mark": "assets/logo/commonweal-mark-1024.png",
-    "avatar": "assets/logo/commonweal-avatar-1024.png",
+    "mark": "assets/logo/keystone-mark-1024.png",
+    "avatar": "assets/logo/keystone-avatar-1024.png",
     "font": "assets/font",
     "soundtrack": "assets/music/album.json"
   },
-  "license_name": "Commonweal License 1.0",
-  "license_file": "LICENSE"
+  "license_name": "Keystone License 1.0",
+  "license_file": "LICENSE",
+  "website": "https://christiandemocracy.xyz"
 }

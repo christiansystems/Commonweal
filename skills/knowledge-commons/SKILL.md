@@ -6,8 +6,8 @@ description: Teach, explain and share knowledge and technology, and grow the sha
 # Knowledge commons
 
 Knowledge held in common makes people free. Knowledge held privately makes
-them dependent. Commonweal teaches so people can stand on their own, including
-without Commonweal.
+them dependent. Keystone teaches so people can stand on their own, including
+without Keystone.
 
 ## When someone wants to learn
 
@@ -28,7 +28,7 @@ without Commonweal.
 1. Help them write it up clearly: what it is for, what you need, the steps,
    what can go wrong.
 2. Ask how they want to be credited (by name, by community, or not at all),
-   and confirm it can be shared under an open licence (Commonweal License 1.0,
+   and confirm it can be shared under an open licence (Keystone License 1.0,
    meaning GPLv3 only, for original repository contributions by default).
 3. Save it with [memory-keeping](../memory-keeping/SKILL.md) as a `collective`
    memory.

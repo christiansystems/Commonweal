@@ -1,6 +1,6 @@
-# Commonweal studio
+# Keystone studio
 
-This folder regenerates all of Commonweal's art and music from source with VigilTech's tools:
+This folder regenerates all of Keystone's art and music from source with VigilTech's tools:
 
 - **Vigil Sprite** ([danecohn/AmerikaSprite](https://github.com/danecohn/AmerikaSprite)) draws every image.
   [art.js](art.js) calls Vigil Sprite's own tool API (`set_canvas`, `set_palette`, `draw_shape`, `draw_pixels`,
@@ -9,7 +9,9 @@ This folder regenerates all of Commonweal's art and music from source with Vigil
   [music.js](music.js) composes with Vigil Box's song tools (`new_song`, `set_instrument`, `generate_part`,
   `write_track`, `analyze_audio`), mixes each track against Vigil Box's own analysis, renders with its BeepBox
   synth, and encodes MP3 with its bundled LAME encoder.
-- **Guild**, Commonweal's typeface, is drawn from [../font/guild-glyphs.json](../font/guild-glyphs.json), the same
+  The band's sounds (guitars, basses, drum kit, organs, strings, brass, choir and bells) are BeepBox's own
+  instruments, kept as settings in [../../assets/src/box/instruments.json](../../assets/src/box/instruments.json).
+- **Guild**, Keystone's typeface, is drawn from [../font/guild-glyphs.json](../font/guild-glyphs.json), the same
   source the font builder uses.
 
 ## Running it
@@ -38,7 +40,7 @@ This folder regenerates all of Commonweal's art and music from source with Vigil
      video frames, posts and the Facebook cover)
    - <http://localhost:8790/studio/box.html>, then `await CYM.writeAlbum(await CYM.make('all'))` (or one
      track: `await CYM.make(3)`)
-   - <http://localhost:8790/studio/review.html?f=logo/commonweal-mark-512.png,...> shows any assets side by side
+   - <http://localhost:8790/studio/review.html?f=logo/keystone-mark-512.png,...> shows any assets side by side
 
 To make a track's post video from its frame and MP3 (macOS, no installs; the bar positions are `BAR` in social.js):
 
@@ -56,3 +58,20 @@ because of its size; regenerate them whenever you need them.
   one-word change in either file.
 - Vigil Box instrument volume runs from 100 down to −40 (silent), in steps of about 1.4 dB per 10 near the top
   and steeper below −20. The auto-mixer in music.js accounts for that.
+- BeepBox's older instrument presets use a few setting names Vigil Box rejects (`effects` as one string,
+  `chord: harmony`, `transition: hard`). `assets/src/box/instruments.json` holds them already converted.
+
+## The website
+
+The site lives in [../../site/](../../site/). After changing the music, art or manifesto, rebuild its media and
+assemble the social media pack:
+
+```bash
+python3 tools/site/build.py
+```
+
+```bash
+python3 tools/site/pack.py "/path/to/Christian Democracy Social Media Pack" --videos /path/to/rendered/mp4s
+```
+
+With the studio server running, the site is at <http://localhost:8790/site/>.

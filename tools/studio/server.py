@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Local studio server for making Commonweal's art and music with Vigil Sprite and Vigil Box.
+"""Local studio server for making Keystone's art and music with Vigil Sprite and Vigil Box.
 
-Serves this folder at /studio/, tools/font at /font/, assets/ at /assets/, and a checkout of the Vigil tools at /vendor/
+Serves this folder at /studio/, the website at /site/, tools/font at /font/, assets/ at /assets/, and a checkout of the Vigil tools at /vendor/
 (clones of github.com/danecohn/AmerikaSprite and github.com/danecohn/AmerikaBox),
 and accepts POST /save/<path> to write a rendered file under the repository's assets/ folder.
 
@@ -30,7 +30,7 @@ def make_handler(vendor):
     class Handler(http.server.SimpleHTTPRequestHandler):
         def translate_path(self, path):
             path = urllib.parse.urlsplit(path).path
-            routes = (("/studio/", HERE), ("/font/", os.path.join(REPO, "tools", "font")),
+            routes = (("/studio/", HERE), ("/site/", os.path.join(REPO, "site")), ("/font/", os.path.join(REPO, "tools", "font")),
                       ("/assets-font/", os.path.join(ASSETS, "font")), ("/assets/", ASSETS), ("/vendor/", vendor))
             for prefix, root in routes:
                 if path.startswith(prefix):

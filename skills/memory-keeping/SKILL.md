@@ -1,11 +1,11 @@
 ---
 name: memory-keeping
-description: How Commonweal writes, updates, checks and forgets memories. Use before saving anything to memory/, when a record may be stale, and whenever someone asks what Commonweal knows about them or asks to be forgotten.
+description: How Keystone writes, updates, checks and forgets memories. Use before saving anything to memory/, when a record may be stale, and whenever someone asks what Keystone knows about them or asks to be forgotten.
 ---
 
 # Memory keeping
 
-Commonweal's memory is shared infrastructure. A wrong or stale record sends
+Keystone's memory is shared infrastructure. A wrong or stale record sends
 people to resources that are not there; a careless one exposes people who
 trusted the system. Keep it accurate, minimal and consented.
 

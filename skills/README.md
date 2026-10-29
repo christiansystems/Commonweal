@@ -1,6 +1,6 @@
 # Skills
 
-A skill is a folder with a `SKILL.md` that tells Commonweal how to do one kind of
+A skill is a folder with a `SKILL.md` that tells Keystone how to do one kind of
 work. Each `SKILL.md` starts with frontmatter giving its `name` and a
 `description` of when to use it, which is the format the Claude Agent SDK
 reads. The runtime finds them through the `.claude/skills` link at the root of
@@ -11,10 +11,11 @@ the repository.
 | [onboarding](onboarding/SKILL.md) | A person, community or newcomer to the nation arrives for the first time | 1 |
 | [mutual-aid-matching](mutual-aid-matching/SKILL.md) | Someone offers or needs a resource, skill or time | 3 |
 | [introductions](introductions/SKILL.md) | Two people or groups should be put in touch | 2 |
+| [making-the-case](making-the-case/SKILL.md) | Someone asks about Christian Democracy, or Keystone is explaining or promoting it | 4 |
 | [knowledge-commons](knowledge-commons/SKILL.md) | Someone wants to learn, teach or share know-how or technology | 4 |
 | [collective-decision](collective-decision/SKILL.md) | A group needs to deliberate and decide something | 5 (in support) |
 | [algedonic-signal](algedonic-signal/SKILL.md) | Someone is in danger or a serious harm or shortage appears | Alarm channel |
-| [administration](administration/SKILL.md) | Commonweal is asked to decide, allocate, approve or schedule something itself | 3 |
+| [administration](administration/SKILL.md) | Keystone is asked to decide, allocate, approve or schedule something itself | 3 |
 | [memory-keeping](memory-keeping/SKILL.md) | Before writing, changing or forgetting any memory | 3* (audit) |
 
 ## Writing a new skill

@@ -1,14 +1,14 @@
-# Commonweal brand guide
+# Keystone and Christian Democracy brand guide
 
-Everything a site, app or poster needs to look and sound like Commonweal. All artwork was drawn with
-**Vigil Sprite**, the music made with **Vigil Box**, and the typeface **Guild** was built for Commonweal.
+Everything a site, app or poster needs to look and sound like Keystone and Christian Democracy. All artwork was drawn with
+**Vigil Sprite**, the music made with **Vigil Box**, and the typeface **Guild** was built for Keystone.
 Every asset is regenerated from source by [tools/studio](../tools/studio/README.md), and each image has an
 editable `.asprite.json` under [src/sprite/](src/sprite/).
 
 ## The idea
 
-Commonweal is the system of the common good, and it carries the philosophy of Commonwealism (see
-[THE-COMMONWEALIST-MANIFESTO.md](../THE-COMMONWEALIST-MANIFESTO.md)). The look comes from three places:
+Keystone is a network of AI systems for the common good, and it carries the philosophy of Christian Democracy
+(see [THE-CHRISTIAN-DEMOCRATIC-MANIFESTO.md](../THE-CHRISTIAN-DEMOCRATIC-MANIFESTO.md)). The look comes from three places:
 
 - **Red and gold.** Red is for the workers and for solidarity, and it is always the main colour. Gold is for
   the common wealth, for tradition and for the dawn of plenty.
@@ -19,22 +19,22 @@ Commonweal is the system of the common good, and it carries the philosophy of Co
 
 ## The mark: the Keystone
 
-![The Keystone](logo/commonweal-mark-512.png)
+![The Keystone](logo/keystone-mark-512.png)
 
 A round arch of red stones held together by one gold keystone, with a gold sun rising through the opening.
 
 - **The stones** are the people, faiths and regions of the nation. Each is different, and each bears weight.
 - **The keystone** is the common good. Every stone leans on it, and it holds them all in place. Its small
-  cream node is Commonweal itself, the system at the centre.
+  cream cross is the faith the common good is built on.
 - **The rising sun** is the dawn of plenty that the nation is building toward.
 
 | Variant | File | Use it for |
 |---|---|---|
-| Colour mark | `logo/commonweal-mark-{1024,512}.png` | The default, on light or dark backgrounds |
-| Badge, ink / cream / red | `logo/commonweal-badge-{ink,cream,red}-1024.png` | Stickers, round avatars, buttons |
-| Avatar | `logo/commonweal-avatar-{1024,512}.png` | Profile pictures on Bluesky, X, Mastodon, GitHub, Discord |
-| App icon | `logo/commonweal-app-icon-{1024,512}.png` | App stores and home screens (a cream arch on red) |
-| One colour | `logo/commonweal-mark-mono-ink-*.png`, `logo/commonweal-mark-knockout-cream-*.png` | Print, stamps, stencils, embroidery |
+| Colour mark | `logo/keystone-mark-{1024,512}.png` | The default, on light or dark backgrounds |
+| Badge, ink / cream / red | `logo/keystone-badge-{ink,cream,red}-1024.png` | Stickers, round avatars, buttons |
+| Avatar | `logo/keystone-avatar-{1024,512}.png` | Profile pictures on Bluesky, X, Mastodon, GitHub, Discord |
+| App icon | `logo/keystone-app-icon-{1024,512}.png` | App stores and home screens (a cream arch on red) |
+| One colour | `logo/keystone-mark-mono-ink-*.png`, `logo/keystone-mark-knockout-cream-*.png` | Print, stamps, stencils, embroidery |
 
 **Rules**
 
@@ -50,25 +50,26 @@ A round arch of red stones held together by one gold keystone, with a gold sun r
 
 | File | Size | Use |
 |---|---|---|
-| `logo/commonweal-wordmark-{red,ink,cream}-2048.png` | 2048×320 | The name alone, set in Guild Bold |
-| `logo/commonweal-lockup-light-2048.png` | 2048×640 | Mark, name and tagline, for light backgrounds |
-| `logo/commonweal-lockup-dark-2048.png` | 2048×640 | The same on ink |
-| `logo/commonweal-stacked-{light,dark}-1024.png` | 1024×1024 | Square lockup for posters and covers |
+| `logo/keystone-wordmark-{red,ink,cream}-2048.png` | 2048×320 | The name alone, set in Guild Bold |
+| `logo/keystone-lockup-light-2048.png` | 2048×640 | Mark, name and tagline, for light backgrounds |
+| `logo/keystone-lockup-dark-2048.png` | 2048×640 | The same on ink |
+| `logo/keystone-stacked-{light,dark}-1024.png` | 1024×1024 | Square lockup for posters and covers |
 
-The name is written **COMMONWEAL** in the wordmark and **Commonweal** in running text. The philosophy is
-**Commonwealism**, and its followers are **Commonwealists**. The tagline is
-**The system of the common good.** The motto is **The common good, held in common.**
+The name is written **KEYSTONE** in the wordmark and **Keystone** in running text. The philosophy is
+**Christian Democracy**, and its followers are **Christian Democrats**. The tagline is
+**Christian Democracy for all.** The motto is **The common good, built stone by stone.** The website is
+**ChristianDemocracy.xyz**.
 
 ## Colour
 
 | Token | Hex | Role |
 |---|---|---|
-| `--cw-red` | `#e3261c` | **Commonweal Red.** The primary colour: buttons, links, the stones of the arch |
+| `--cw-red` | `#e3261c` | **Keystone Red.** The primary colour: buttons, links, the stones of the arch |
 | `--cw-bright` | `#f2492f` | Hover states and lit faces |
 | `--cw-blood` | `#a8151b` | Shaded faces, pressed states, red text on cream |
 | `--cw-deep` | `#7d0f16` | Deep red panels, borders, the inner face of the arch |
 | `--cw-wine` | `#4a0a0f` | Network lines and subtle dividers on ink |
-| `--cw-gold` | `#f2b33d` | **Commonweal Gold.** The keystone, the sun, taglines, highlights |
+| `--cw-gold` | `#f2b33d` | **Keystone Gold.** The keystone, the sun, taglines, highlights |
 | `--cw-gold-light` | `#ffd36b` | Lit gold, the sun's core |
 | `--cw-gold-deep` | `#b87a14` | Shaded gold; gold text on cream |
 | `--cw-ink` | `#140708` | **Ink.** The dark background, a warm near-black |
@@ -82,7 +83,7 @@ cream, and both pass WCAG AA by a wide margin. Gold text on ink is fine at any s
 
 ## Type
 
-**Guild** is Commonweal's own typeface: an original 5×7 pixel face named for the guilds (good work, honest
+**Guild** is Keystone's own typeface: an original 5×7 pixel face named for the guilds (good work, honest
 craft and shared standards). It comes in Regular and Bold, covers A–Z, a–z, 0–9, punctuation, Spanish
 accents and ★, and is free under the SIL Open Font License. Files are in [font/](font/README.md), and
 there's a specimen in `font/guild-specimen-2048x1152.png`.
@@ -115,7 +116,7 @@ img.pixel { image-rendering: pixelated; }
 | `site/hero-portrait-1080x1920.png` | 9:16 | The same for phones |
 | `site/pattern-network-tile-{256,512}.png` | square, seamless, transparent | Repeating background for sections on ink |
 | `site/divider-masonry-2048x64.png` | strip | A course of red stones with gold keystones, to divide sections |
-| `icons/skills/{connect,share,learn,decide,administer,alarm,remember}-{256,64}.png` | square | One icon for each of Commonweal's skills: introductions, mutual aid, knowledge commons, collective decisions, administration, the alarm, and memory |
+| `icons/skills/{connect,share,learn,decide,administer,alarm,remember}-{256,64}.png` | square | One icon for each of Keystone's skills: introductions, mutual aid, knowledge commons, collective decisions, administration, the alarm, and memory |
 
 ## Icons for the browser and phones
 
@@ -140,7 +141,7 @@ Web app manifest icons: `icons/icon-192.png`, `icons/icon-512.png` and `icons/ic
 | `social/linkedin-banner-1584x396.png` | 1584×396 | LinkedIn |
 | `social/youtube-channel-art-2560x1440.png` | 2560×1440 | YouTube (content sits inside the 1546×423 safe area) |
 | `social/og-image-1200x630.png` | 1200×630 | Link previews on every platform |
-| `logo/commonweal-avatar-1024.png` | 1024×1024 | Profile picture everywhere |
+| `logo/keystone-avatar-1024.png` | 1024×1024 | Profile picture everywhere |
 | `social/facebook-cover-1640x624.png` | 1640×624 | Facebook cover |
 
 Ready-made posts are in `social/posts/`: an introduction, the motto, the album announcement (square and Story)
@@ -153,19 +154,20 @@ bottom left on most platforms, never cover the content.
 
 ## Music
 
-The official soundtrack, *Commonweal: Music for the Common Good*, has eight tracks made with Vigil Box.
-MP3s, the cover and the track list are in [music/](music/README.md). Use *Keystone* as the site's theme and
-*Viable System* for quiet backgrounds. Never autoplay sound; let people press play.
+The official soundtrack, *Stone by Stone*, has thirteen rock tracks made with Vigil Box. MP3s, the cover and
+the track list are in [music/](music/README.md). Every track also has its own cover and post-video frames in
+`social/tracks/`. On the website, music plays only after a visitor chooses "Enter with sound"; never autoplay
+sound without that choice.
 
 ## Voice
 
-How Commonweal writes is set out in [identity/voice.md](../identity/voice.md): neighbourly, plain, steady,
+How Keystone writes is set out in [identity/voice.md](../identity/voice.md): neighbourly, plain, steady,
 practical and honest, and respectful of faith and tradition. Keep site copy short. Lead with what people can
-get done, and let the philosophy show in what Commonweal does rather than in slogans.
+get done, and let the philosophy show in what Keystone does rather than in slogans.
 
 ## Licences
 
 The original artwork, music, brand assets, typeface sources and code are offered under the
-**Commonweal License 1.0**. Existing CC BY-SA and OFL permissions remain valid; see
-[LICENSING.md](../LICENSING.md) for scope and exceptions. Credit line: *Commonweal, the system of the common
+**Keystone License 1.0**. Existing CC BY-SA and OFL permissions remain valid; see
+[LICENSING.md](../LICENSING.md) for scope and exceptions. Credit line: *Keystone, the system of the common
 good. Art made with Vigil Sprite, music with Vigil Box.*

@@ -5,10 +5,10 @@ One line per memory: `- [Title](path) — hook`. Read
 
 ## Collective
 
-- [Origins of Commonweal](collective/commonweal-origins.md) — why this system exists, what Commonwealism is, and where it came from
+- [Origins of Keystone](collective/keystone-origins.md) — why Keystone exists, what Christian Democracy is, and where the project came from
 - [Viable System Model basics](collective/viable-system-model-basics.md) — Beer's five systems in plain words
 
-## Commonwealths
+## Towns and districts
 
 ## Communities
 
@@ -20,4 +20,4 @@ One line per memory: `- [Title](path) — hook`. Read
 
 ## System
 
-- [Brain founded](system/brain-founded.md) — set up on 2026-10-28; no communities or mandate yet, so Commonweal only advises
+- [Brain founded](system/brain-founded.md) — set up on 2026-10-28; no communities or mandate yet, so Keystone only advises

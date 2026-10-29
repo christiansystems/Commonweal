@@ -1,0 +1,14 @@
+{
+  "name": "Christian Democracy",
+  "short_name": "Christian Democracy",
+  "description": "The common good, built stone by stone.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#140708",
+  "theme_color": "#e3261c",
+  "icons": [
+    { "src": "media/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "media/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "media/icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

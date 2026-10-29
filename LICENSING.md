@@ -1,6 +1,6 @@
-# The Commonweal License
+# The Keystone License
 
-**Commonweal License 1.0** is our name for the repository's GPLv3 grant and
+**Keystone License 1.0** is our name for the repository's GPLv3 grant and
 its accompanying statement of principles. [LICENSE](LICENSE) includes the
 full, unchanged GNU GPL version 3 text. Its legal terms are GPLv3 only, with
 no additional restrictions. Use **`GPL-3.0-only`** in SPDX notices, package
@@ -9,15 +9,15 @@ metadata and other machine-readable license fields.
 Our principles explain why we share this work. They are nonbinding for
 recipients. They do not limit fields of use, compel political or religious
 agreement, or impose privacy, human-review or other additional license
-conditions. Commonweal itself remains governed by its own constitution.
+conditions. Keystone itself remains governed by its own constitution.
 Recipients may distribute covered material simply as GPLv3 and omit the
-Commonweal introduction. This is compatible with GPLv3 because the legal
+Keystone introduction. This is compatible with GPLv3 because the legal
 grant is GPLv3, rather than a separate license with extra restrictions.
 It does not imply compatibility with GPLv2-only material.
 
 ## Repository-wide scope
 
-The Commonweal copyright holders offer their original code, instructions,
+The Keystone copyright holders offer their original code, instructions,
 identity, governance, documentation, memory content, artwork, music, glyph
 sources and generated assets under this grant to the extent they hold the
 necessary rights. Contributions intended for inclusion must be offered under
@@ -51,14 +51,14 @@ copyright holders must authorize any relicensing of their material.
 A notice for original contributions can read:
 
 > Copyright <year> <copyright holder>.
-> Licensed under the Commonweal License 1.0: GNU GPL version 3 only.
+> Licensed under the Keystone License 1.0: GNU GPL version 3 only.
 > SPDX-License-Identifier: GPL-3.0-only
 > See LICENSE for the complete terms.
 
 Retain required notices, identify modifications and provide Corresponding
 Source and other materials as required by GPLv3. Later GPL versions do not
 apply automatically. GitHub may recognize the unchanged GPL text; the
-Commonweal name is not a separate GitHub or SPDX license classification.
+Keystone name is not a separate GitHub or SPDX license classification.
 
 ## Sources
 

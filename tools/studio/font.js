@@ -1,4 +1,4 @@
-/* Guild, Commonweal's pixel typeface, for drawing text into Vigil Sprite art.
+/* Guild, Keystone's pixel typeface, for drawing text into Vigil Sprite art.
    The glyphs live in tools/font/guild-glyphs.json, the same source the TTF/WOFF builder uses. */
 (function (root) {
   'use strict';

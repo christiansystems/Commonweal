@@ -1,4 +1,4 @@
-/* Commonweal's art, drawn with Vigil Sprite's own engine and tools (AS.tools.run: set_canvas, draw_shape,
+/* Keystone's art, drawn with Vigil Sprite's own engine and tools (AS.tools.run: set_canvas, draw_shape,
    draw_pixels, fill_region, new_layer, outline, export...). Every asset is saved twice: the PNG export and the
    editable .asprite.json document, so anyone can open and change it in Vigil Sprite.
 
@@ -97,7 +97,11 @@
     await poly(S, [kBotL, kTopL, kMidTop, kMidBot], c.keyLit);
     await poly(S, [kMidBot, kMidTop, kTopR, kBotR], c.key);
     await poly(S, [ap(cx, oy, ri, k0), ap(cx, oy, rm, k0), ap(cx, oy, rm, k1), ap(cx, oy, ri, k1)], c.keyShade);
-    if (!small) await disc(S, cx, Math.round((kTopL[1] + ap(cx, oy, rm, 90)[1]) / 2), size * 0.022, c.sunCore === c.key ? c.key : P.cream);
+    if (!small) { // a small cross at the heart of the keystone: the faith the common good is built on
+      var ny = Math.round((kTopL[1] + ap(cx, oy, rm, 90)[1]) / 2), th = Math.max(2, Math.round(size * 0.014)), ch = Math.round(size * 0.062), cw = Math.round(size * 0.04), crossColor = c.sunCore === c.key ? c.key : P.cream;
+      await rect(S, Math.round(cx - th / 2), Math.round(ny - ch / 2), th, ch, crossColor);
+      await rect(S, Math.round(cx - cw / 2), Math.round(ny - ch / 2 + ch * 0.3 - th / 2), cw, th, crossColor);
+    }
     // piers and plinths
     var pw = Math.round(ro - ri), lx = Math.round(cx - ro), rx = Math.round(cx + ri), py = oy, ph = Math.round(pierH);
     var jg = small ? 0 : Math.max(1, Math.round(size * 0.008));
@@ -146,46 +150,46 @@
   async function bg(S, color) { await rect(S, 0, 0, S.doc.w, S.doc.h, color); }
 
   // ---------------------------------------------------------------- assets
-  var NAME = 'COMMONWEAL', TAGLINE = 'THE SYSTEM OF THE COMMON GOOD';
+  var NAME = 'KEYSTONE', TAGLINE = 'CHRISTIAN DEMOCRACY FOR ALL';
   var DAWN = [P.night, '#2a0c0f', P.wine, P.deep, P.blood, P.red, P.goldDeep, P.gold];
   var JOBS = {};
 
   // Logos ------------------------------------------------------------
   JOBS.marks = async function () {
     var out = [], S;
-    for (var v of [['commonweal-mark', 'color'], ['commonweal-mark-mono-ink', 'mono'], ['commonweal-mark-knockout-cream', 'knockout']]) {
-      S = await sprite(512, 512, 'Commonweal mark (' + v[1] + ')');
+    for (var v of [['keystone-mark', 'color'], ['keystone-mark-mono-ink', 'mono'], ['keystone-mark-knockout-cream', 'knockout']]) {
+      S = await sprite(512, 512, 'Keystone mark (' + v[1] + ')');
       await mark(S, 256, 256, 500, v[1]);
       out = out.concat(await save(S, 'logo/' + v[0], [{ scale: 2, suffix: '-1024' }, { scale: 1, suffix: '-512' }]));
     }
-    for (var b of [['commonweal-badge-ink', P.ink], ['commonweal-badge-cream', P.cream]]) {
-      S = await sprite(512, 512, 'Commonweal badge');
+    for (var b of [['keystone-badge-ink', P.ink], ['keystone-badge-cream', P.cream]]) {
+      S = await sprite(512, 512, 'Keystone badge');
       await mark(S, 256, 256, 512, 'color', { badge: b[1] });
       out = out.concat(await save(S, 'logo/' + b[0], [{ scale: 2, suffix: '-1024' }]));
     }
-    S = await sprite(512, 512, 'Commonweal badge (red)');
+    S = await sprite(512, 512, 'Keystone badge (red)');
     await mark(S, 256, 256, 512, 'onred', { badge: P.red });
-    out = out.concat(await save(S, 'logo/commonweal-badge-red', [{ scale: 2, suffix: '-1024' }]));
+    out = out.concat(await save(S, 'logo/keystone-badge-red', [{ scale: 2, suffix: '-1024' }]));
     // full-bleed squares for avatars and app icons (platforms crop them to a circle or rounded square)
-    S = await sprite(512, 512, 'Commonweal avatar');
+    S = await sprite(512, 512, 'Keystone avatar');
     await bg(S, P.ink); await mark(S, 256, 256, 400, 'color');
-    out = out.concat(await save(S, 'logo/commonweal-avatar', [{ scale: 2, suffix: '-1024' }, { scale: 1, suffix: '-512' }]));
-    S = await sprite(512, 512, 'Commonweal app icon');
+    out = out.concat(await save(S, 'logo/keystone-avatar', [{ scale: 2, suffix: '-1024' }, { scale: 1, suffix: '-512' }]));
+    S = await sprite(512, 512, 'Keystone app icon');
     await bg(S, P.red); await mark(S, 256, 256, 400, 'onred');
-    out = out.concat(await save(S, 'logo/commonweal-app-icon', [{ scale: 2, suffix: '-1024' }, { scale: 1, suffix: '-512' }]));
+    out = out.concat(await save(S, 'logo/keystone-app-icon', [{ scale: 2, suffix: '-1024' }, { scale: 1, suffix: '-512' }]));
     return out;
   };
 
   JOBS.wordmarks = async function () {
     var out = [], S;
-    for (var v of [['commonweal-wordmark-red', P.red], ['commonweal-wordmark-ink', P.ink], ['commonweal-wordmark-cream', P.cream]]) {
-      S = await sprite(512, 80, 'Commonweal wordmark');
+    for (var v of [['keystone-wordmark-red', P.red], ['keystone-wordmark-ink', P.ink], ['keystone-wordmark-cream', P.cream]]) {
+      S = await sprite(512, 80, 'Keystone wordmark');
       await centreText(S, NAME, 15, 7, v[1], { bold: true });
       out = out.concat(await save(S, 'logo/' + v[0], [{ scale: 4, suffix: '-2048' }]));
     }
     // horizontal lockup: mark + wordmark + tagline
-    for (var l of [['commonweal-lockup-light', P.ink, P.blood, null], ['commonweal-lockup-dark', P.cream, P.gold, P.ink]]) {
-      S = await sprite(512, 160, 'Commonweal lockup');
+    for (var l of [['keystone-lockup-light', P.ink, P.blood, null], ['keystone-lockup-dark', P.cream, P.gold, P.ink]]) {
+      S = await sprite(512, 160, 'Keystone lockup');
       if (l[3]) await bg(S, l[3]);
       await mark(S, 66, 80, 124, 'color');
       await text(S, NAME, 138, 50, 5, l[1], { bold: true });
@@ -193,8 +197,8 @@
       out = out.concat(await save(S, 'logo/' + l[0], [{ scale: 4, suffix: '-2048' }]));
     }
     // stacked lockup, square
-    for (var st of [['commonweal-stacked-light', P.ink, P.blood, null], ['commonweal-stacked-dark', P.cream, P.gold, P.ink]]) {
-      S = await sprite(512, 512, 'Commonweal stacked lockup');
+    for (var st of [['keystone-stacked-light', P.ink, P.blood, null], ['keystone-stacked-dark', P.cream, P.gold, P.ink]]) {
+      S = await sprite(512, 512, 'Keystone stacked lockup');
       if (st[3]) await bg(S, st[3]);
       await mark(S, 256, 196, 320, 'color');
       await centreText(S, NAME, 366, 7, st[1], { bold: true });
@@ -207,17 +211,17 @@
   JOBS.favicons = async function () {
     var out = [], S;
     for (var f of [[16, 'favicon-16'], [32, 'favicon-32'], [48, 'favicon-48']]) {
-      S = await sprite(f[0], f[0], 'Commonweal ' + f[1]);
+      S = await sprite(f[0], f[0], 'Keystone ' + f[1]);
       await mark(S, f[0] / 2, f[0] / 2, f[0], 'color', { noSun: f[0] < 32 });
       out = out.concat(await save(S, 'icons/' + f[1], [{ scale: 1 }]));
     }
     for (var a of [[180, 'apple-touch-icon'], [192, 'icon-192'], [512, 'icon-512']]) {
-      S = await sprite(a[0], a[0], 'Commonweal ' + a[1]);
+      S = await sprite(a[0], a[0], 'Keystone ' + a[1]);
       await bg(S, P.red); await mark(S, a[0] / 2, a[0] / 2, a[0] * 0.8, 'onred');
       out = out.concat(await save(S, 'icons/' + a[1], [{ scale: 1 }]));
     }
     // maskable PWA icon: content inside the central 80% safe zone
-    S = await sprite(512, 512, 'Commonweal maskable icon');
+    S = await sprite(512, 512, 'Keystone maskable icon');
     await bg(S, P.red); await mark(S, 256, 256, 340, 'onred');
     out = out.concat(await save(S, 'icons/icon-512-maskable', [{ scale: 1 }]));
     return out;
@@ -232,7 +236,7 @@
   JOBS.banners = async function () {
     var out = [], S;
     // Bluesky 3000x1000; X / Twitter and Mastodon 1500x500 (same 3:1 art). Avatars sit bottom left, so the centre carries the content.
-    S = await sprite(300, 100, 'Commonweal social banner 3:1');
+    S = await sprite(300, 100, 'Keystone social banner 3:1');
     await bannerArt(S, 300, 100, 1971);
     await T(S, 'new_layer', { name: 'Identity' });
     await mark(S, 150, 28, 50, 'color');
@@ -241,7 +245,7 @@
     out = out.concat(await save(S, 'social/bluesky-banner', [{ scale: 10, suffix: '-3000x1000' }]));
     out = out.concat(await save(S, 'social/x-mastodon-header', [{ scale: 5, suffix: '-1500x500' }]));
     // LinkedIn 1584x396 (4:1)
-    S = await sprite(396, 99, 'Commonweal LinkedIn banner');
+    S = await sprite(396, 99, 'Keystone LinkedIn banner');
     await bannerArt(S, 396, 99, 1973);
     await T(S, 'new_layer', { name: 'Identity' });
     var gx = Math.round((396 - (64 + 10 + textWidth(NAME, 3, { bold: true }))) / 2);
@@ -250,7 +254,7 @@
     await text(S, TAGLINE, gx + 75, 62, 1, P.gold);
     out = out.concat(await save(S, 'social/linkedin-banner', [{ scale: 4, suffix: '-1584x396' }]));
     // Open Graph / link preview 1200x630
-    S = await sprite(240, 126, 'Commonweal Open Graph image');
+    S = await sprite(240, 126, 'Keystone Open Graph image');
     await bannerArt(S, 240, 126, 1972);
     await T(S, 'new_layer', { name: 'Identity' });
     await mark(S, 120, 38, 60, 'color');
@@ -258,7 +262,7 @@
     await centreText(S, TAGLINE, 103, 1, P.gold);
     out = out.concat(await save(S, 'social/og-image', [{ scale: 5, suffix: '-1200x630' }]));
     // YouTube channel art 2560x1440, content in the 1546x423 safe area
-    S = await sprite(512, 288, 'Commonweal YouTube channel art');
+    S = await sprite(512, 288, 'Keystone YouTube channel art');
     await bannerArt(S, 512, 288, 1974);
     await T(S, 'new_layer', { name: 'Identity' });
     gx = Math.round((512 - (70 + 12 + textWidth(NAME, 3, { bold: true }))) / 2);
@@ -273,22 +277,22 @@
   JOBS.site = async function () {
     var out = [], S;
     // hero backgrounds, no text (the site sets its own headline over the clear centre): a network of people over a dawn
-    S = await sprite(384, 216, 'Commonweal hero');
+    S = await sprite(384, 216, 'Keystone hero');
     await bg(S, P.ink);
     await sunrise(S, 192, 300, 200, DAWN);
     await network(S, 0, 0, 384, 216, { seed: 1970, step: 15, clear: { cx: 192, cy: 96, rx: 130, ry: 70 }, people: 0.1, person: P.gold, fade: function (x, y) { return y > 150 ? 0.25 : 1; } });
     out = out.concat(await save(S, 'site/hero', [{ scale: 5, suffix: '-1920x1080' }, { scale: 10, suffix: '-3840x2160' }]));
-    S = await sprite(216, 384, 'Commonweal hero (portrait)');
+    S = await sprite(216, 384, 'Keystone hero (portrait)');
     await bg(S, P.ink);
     await sunrise(S, 108, 470, 190, DAWN);
     await network(S, 0, 0, 216, 384, { seed: 1969, step: 15, clear: { cx: 108, cy: 150, rx: 80, ry: 90 }, people: 0.1, person: P.gold, fade: function (x, y) { return y > 300 ? 0.25 : 1; } });
     out = out.concat(await save(S, 'site/hero-portrait', [{ scale: 5, suffix: '-1080x1920' }]));
     // seamless network tile for section backgrounds
-    S = await sprite(64, 64, 'Commonweal network tile');
+    S = await sprite(64, 64, 'Keystone network tile');
     await tile(S, 64, 7);
     out = out.concat(await save(S, 'site/pattern-network-tile', [{ scale: 4, suffix: '-256' }, { scale: 8, suffix: '-512' }]));
     // divider strip: a course of red stones with a gold keystone every few
-    S = await sprite(256, 8, 'Commonweal masonry divider');
+    S = await sprite(256, 8, 'Keystone masonry divider');
     await bg(S, P.ink);
     for (var x = 0, k = 0; x < 256; x += 16, k++) await rect(S, x + 1, 1, 14, 6, k % 4 === 2 ? P.gold : (k % 2 ? P.red : P.blood));
     out = out.concat(await save(S, 'site/divider-masonry', [{ scale: 8, suffix: '-2048x64' }]));
@@ -312,7 +316,7 @@
     for (i = 0; i < nodes.length; i++) await rect(S, nodes[i][0] - 1, nodes[i][1] - 1, i % 5 ? 2 : 3, i % 5 ? 2 : 3, i % 5 ? P.blood : P.gold);
   }
 
-  // Icons for Commonweal's seven skills, on a 64 grid ---------------------------------------
+  // Icons for Keystone's seven skills, on a 64 grid ---------------------------------------
   var ICONS = {
     connect: async function (S) { // three people joined
       var a = [14, 46], b = [50, 46], c = [32, 16];
@@ -355,7 +359,7 @@
   JOBS.icons = async function () {
     var out = [];
     for (var name in ICONS) {
-      var S = await sprite(64, 64, 'Commonweal icon: ' + name);
+      var S = await sprite(64, 64, 'Keystone icon: ' + name);
       await ICONS[name](S);
       out = out.concat(await save(S, 'icons/skills/' + name, [{ scale: 4, suffix: '-256' }, { scale: 1, suffix: '-64' }]));
     }
@@ -364,16 +368,21 @@
 
   // Album cover --------------------------------------------------------
   JOBS.album = async function () {
-    var S = await sprite(300, 300, 'Commonweal soundtrack cover'), out = [];
-    await bg(S, P.red);
-    await sunrise(S, 150, 138, 130, [P.bright, P.red, P.blood, P.red, P.bright, P.red]);
-    await mark(S, 150, 134, 200, 'onred');
-    await rect(S, 0, 232, 300, 68, P.ink);
-    for (var x = 4; x < 300; x += 6) await rect(S, x, 236, 2, 2, x % 36 === 22 ? P.goldDeep : P.wine);
-    await centreText(S, NAME, 246, 4, P.cream, { bold: true });
-    await centreText(S, 'MUSIC FOR THE COMMON GOOD', 284, 1, P.gold);
-    await centreText(S, 'OFFICIAL SOUNDTRACK', 12, 1, P.cream);
-    out = out.concat(await save(S, 'music/commonweal-soundtrack-cover', [{ scale: 10, suffix: '-3000' }, { scale: 2, suffix: '-600' }]));
+    var S = await sprite(300, 300, 'Keystone soundtrack cover'), out = [];
+    await bg(S, P.ink);
+    // a red dawn and a rising sun behind the arch
+    await sunrise(S, 150, 232, 170, [P.night, P.wine, P.deep, P.blood, P.red, P.bright]);
+    for (var a = 12; a < 180; a += 12) { var e = pt(150, 232, 210, -a); await poly(S, [[150, 232], [e[0] - 4, e[1]], [e[0] + 4, e[1]]], a % 24 ? P.deep : P.blood); }
+    await disc(S, 150, 232, 62, P.goldDeep); await disc(S, 150, 232, 50, P.gold); await disc(S, 150, 232, 34, P.goldLight);
+    await mark(S, 150, 138, 190, 'color', { noSun: true });
+    await rect(S, 0, 236, 300, 64, P.ink);
+    for (var x2 = 4; x2 < 300; x2 += 8) await rect(S, x2, 239, 4, 2, x2 % 64 === 36 ? P.gold : P.wine);
+    var u = textWidth('STONE BY STONE', 4, { bold: true }) <= 284 ? 4 : 3;
+    await centreText(S, 'STONE BY STONE', 248 + (28 - 7 * u) / 2, u, P.cream, { bold: true });
+    await centreText(S, 'THE KEYSTONE SOUNDTRACK', 284, 1, P.gold);
+    await text(S, NAME, 10, 10, 1, P.red, { bold: true });
+    await text(S, 'THIRTEEN TRACKS', 290 - textWidth('THIRTEEN TRACKS', 1), 10, 1, P.gold);
+    out = out.concat(await save(S, 'music/keystone-soundtrack-cover', [{ scale: 10, suffix: '-3000' }, { scale: 2, suffix: '-600' }]));
     return out;
   };
 
@@ -382,10 +391,10 @@
     var S = await sprite(512, 288, 'Guild specimen'), out = [];
     await bg(S, P.ink);
     await text(S, 'Guild', 24, 22, 10, P.red, { bold: true });
-    await text(S, 'THE TYPEFACE OF COMMONWEAL', 26, 102, 2, P.gold);
+    await text(S, 'THE TYPEFACE OF KEYSTONE', 26, 102, 2, P.gold);
     await text(S, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 26, 132, 2, P.cream, { bold: true });
     await text(S, 'abcdefghijklmnopqrstuvwxyz 0123456789', 26, 154, 2, P.cream);
-    await text(S, 'The common good, held in common. Faith, family, work and nation.', 26, 182, 1, P.paper);
+    await text(S, 'The common good, built stone by stone. Faith, family, work and nation.', 26, 182, 1, P.paper);
     await text(S, 'Liberty for all, care for the weakest. ¡Bienvenidos! Café, niño, acción.', 26, 196, 1, P.paper);
     await text(S, 'Named for the guilds: good work, honest craft and shared standards.', 26, 254, 1, P.blood);
     await mark(S, 446, 62, 100, 'color');
@@ -394,10 +403,10 @@
   };
   JOBS['mark-test'] = async function () {
     var out = [];
-    var S = await sprite(512, 512, 'Commonweal mark test');
+    var S = await sprite(512, 512, 'Keystone mark test');
     await mark(S, 256, 256, 500, 'color');
     out = out.concat(await save(S, 'tmp/mark-test-a', [{ scale: 2 }]));
-    S = await sprite(512, 512, 'Commonweal badge test');
+    S = await sprite(512, 512, 'Keystone badge test');
     await mark(S, 256, 256, 512, 'color', { badge: P.ink });
     out = out.concat(await save(S, 'tmp/mark-test-b', [{ scale: 2 }]));
     return out;

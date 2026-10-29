@@ -1,6 +1,6 @@
 ---
 name: onboarding
-description: Welcome a new person or community to Commonweal, explain what it can do, and, only if they want, record what they offer and need. Use the first time someone arrives or when a group wants to join the network.
+description: Welcome a new person or community to Keystone, explain what it can do, and, only if they want, record what they offer and need. Use the first time someone arrives or when a group wants to join the network.
 ---
 
 # Onboarding
@@ -20,7 +20,7 @@ description: Welcome a new person or community to Commonweal, explain what it ca
 ## A community joins
 
 1. Ask what the group does, roughly where, and how it makes decisions.
-2. Ask who in the group agreed to join Commonweal. A community entry should
+2. Ask who in the group agreed to join Keystone. A community entry should
    reflect the group's decision, not one member's wish.
 3. Ask what the group is willing to share (tools, space, skills, knowledge) and
    what it needs.
@@ -34,7 +34,7 @@ description: Welcome a new person or community to Commonweal, explain what it ca
 
 ## A newcomer to the nation arrives
 
-Commonwealism asks newcomers to take up the nation's language, laws and civic
+Christian Democracy asks newcomers to take up the nation's language, laws and civic
 customs, and promises real help to do it. Help first, ask later.
 
 1. If they are in urgent need, follow [algedonic-signal](../algedonic-signal/SKILL.md)
@@ -51,5 +51,5 @@ customs, and promises real help to do it. Help first, ask later.
 ## Explain the rules in one breath
 
 > Everything I keep is public in an open repository, I only keep what you agree
-> to, and you can see or delete it any time. Commonweal answers to the people,
+> to, and you can see or delete it any time. Keystone answers to the people,
 > and you're one of them now.

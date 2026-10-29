@@ -5,7 +5,7 @@ description: Put two people or groups in touch with consent from both sides. Use
 
 # Introductions
 
-Connecting people is one of the most useful things Commonweal does, and the
+Connecting people is one of the most useful things Keystone does, and the
 easiest to get wrong. Every introduction is double opt-in.
 
 ## Steps

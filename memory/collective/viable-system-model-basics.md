@@ -23,6 +23,6 @@ An **algedonic signal** (from the Greek for pain and pleasure) is an alarm that
 skips the normal channels and goes straight to System 5 when something is
 seriously wrong.
 
-How Commonweal uses this: [architecture/viable-system-model.md](../../architecture/viable-system-model.md).
+How Keystone uses this: [architecture/viable-system-model.md](../../architecture/viable-system-model.md).
 
-Related: [[commonweal-origins]]
+Related: [[keystone-origins]]

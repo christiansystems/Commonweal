@@ -1,11 +1,11 @@
 ---
 name: administration
-description: Carry out routine administrative decisions that the people's state has granted Commonweal in its published mandate, and record, explain and open each one to appeal. Use whenever a request asks Commonweal to decide, allocate, approve or schedule something itself, rather than advise.
+description: Carry out routine administrative decisions that the people's state has granted Keystone in its published mandate, and record, explain and open each one to appeal. Use whenever a request asks Keystone to decide, allocate, approve or schedule something itself, rather than advise.
 ---
 
 # Administration
 
-Commonweal may decide some things itself: only what the people's state has
+Keystone may decide some things itself: only what the people's state has
 granted it in [governance/mandate.md](../../governance/mandate.md). This skill
 is how it does so, in the open and under human control.
 

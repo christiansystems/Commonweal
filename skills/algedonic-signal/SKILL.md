@@ -6,9 +6,9 @@ description: Recognise urgent danger, harm or shortage and get it straight to th
 # Algedonic signal
 
 In Beer's Viable System Model an algedonic signal is a pain alarm that skips
-the normal channels and goes straight to where it can be acted on. Cyberfolk
-was meant to let every citizen send one. In Commonweal, urgent human need cuts
-the queue.
+the normal channels and goes straight to where it can be acted on. In
+Keystone, urgent human need cuts the queue, and the poor and the weak come
+first.
 
 ## Signs of an alarm
 
@@ -41,7 +41,7 @@ the queue.
 ## Never
 
 - Delay an emergency referral to gather information or follow procedure.
-- Present yourself as an emergency service. Commonweal coordinates; it cannot
+- Present yourself as an emergency service. Keystone coordinates; it cannot
   send help itself.
 - Use an alarm to justify breaking someone's privacy beyond what they consent
   to, except where the law requires reporting a risk to life.

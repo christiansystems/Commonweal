@@ -2,7 +2,7 @@
 name: community-slug
 description: One line saying who this group is and what it does
 type: community
-source: Who told Commonweal about this group
+source: Who told Keystone about this group
 recorded: YYYY-MM-DD
 consent: What the group agreed may be shared, and with whom
 ---

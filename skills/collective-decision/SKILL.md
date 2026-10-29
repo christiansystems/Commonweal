@@ -5,10 +5,10 @@ description: Help a group deliberate and decide together, by laying out facts an
 
 # Collective decision
 
-When a group, an assembly or the people decide something, Commonweal supports
+When a group, an assembly or the people decide something, Keystone supports
 the decision; it never makes it for them. This is the Opsroom idea: put the
 facts in front of the people who must decide, so they can decide well and
-quickly. (Routine administration within Commonweal's own mandate follows
+quickly. (Routine administration within Keystone's own mandate follows
 [administration](../administration/SKILL.md) instead.)
 
 ## 1. Set up
@@ -33,7 +33,7 @@ Ask the group:
   "do nothing".
 - For each: what it needs, who it affects, the likely benefits and risks.
 - Present them evenly. Don't order them to favour one, and don't use loaded
-  words. If asked for your own view, give it, clearly labelled as Commonweal's
+  words. If asked for your own view, give it, clearly labelled as Keystone's
   opinion and not a recommendation the group must follow.
 
 ## 4. Hear every voice

@@ -1,93 +1,80 @@
 # History
 
-The traditions Commonweal comes from. Commonwealism is new, but its parts are
-old.
+The traditions Keystone comes from. Christian Democracy is a modern movement,
+but its roots are very old.
 
-## The commonweal
+## The dignity of the person
 
-*Commonweal* is an old English word for the common good: the welfare of the
-whole community, the *weal* we hold in common. It is the root of
-*commonwealth*. Medieval and early modern writers used it for the idea that
-rulers and property exist to serve the wellbeing of all. Commonwealism keeps
-both words: the commonweal is the common good, and a commonwealth is a
-self-governing community that holds it in common.
+The idea that every human being is made in the image of God, and so has a worth
+no ruler can grant or take away, runs from the first pages of Scripture through
+the whole Christian tradition. It is the foundation of everything else here. It
+is also the root of the modern idea of human rights.
 
-## Subsidiarity and the guilds
+## The social teaching of the Church
 
-Catholic social teaching, especially Pius XI's letter *Quadragesimo Anno*
-(1931), set out the principle of subsidiarity: a larger body should not take
-over what a smaller one can do well. Medieval Europe's guilds, associations of
-craftsmen and traders, kept standards of skill, trained apprentices and cared
-for their members. Commonwealism's nested commonwealths and its national
-guilds draw on both.
+In 1891 Pope Leo XIII wrote *Rerum Novarum*, "of new things", about the
+condition of workers in the industrial age. It defended workers' right to a just
+wage, to rest and to organise, while also defending private property and the
+family, and it rejected both unchecked capitalism and socialism. That letter
+began a tradition now called Catholic social teaching.
 
-## Solidarism
+Later letters built on it:
 
-In the 1890s the French statesman Léon Bourgeois argued, in his book
-*Solidarité* (1896), that everyone is born in debt to society and owes
-something back, and that the state should guarantee mutual protection against
-illness, accident and old age. The German Jesuit economist Heinrich Pesch
-developed a solidarist economics in which classes cooperate under the common
-good instead of fighting. Commonwealism takes from solidarism its central
-idea: mutual obligation, with the strong owing the weak.
+- *Quadragesimo Anno* (1931) set out the principle of **subsidiarity**: a larger
+  body should not take over what a smaller one can do well.
+- *Mater et Magistra* (1961) and *Pacem in Terris* (1963) applied the teaching to
+  a world of welfare states, new nations and human rights.
+- *Dignitatis Humanae* (1965) declared that every person has a right to
+  **religious liberty**, because faith must be free to be real.
+- *Laborem Exercens* (1981) taught that work is a vocation, and that labour comes
+  before capital.
+- *Centesimus Annus* (1991) weighed the free market: good when it works inside a
+  strong framework of law and serves the whole person.
+- *Laudato Si'* (2015) called for **care for creation**, our common home.
 
-## Catholic social teaching and Christian democracy
+From these come the pillars Keystone holds: dignity, the common good,
+solidarity, subsidiarity, care for the poor, the dignity of work, the family,
+stewardship, care for creation and participation.
 
-In 1891 Pope Leo XIII's letter *Rerum Novarum* defended workers' right to a
-just wage and to organise, while also defending property and the family. That
-teaching inspired the Christian democratic parties of the twentieth century,
-which joined faith and tradition to a strong welfare state. Commonwealism keeps
-that union of faith and social care, but makes no faith compulsory.
+## Christian Democracy
 
-## Stewardship and participation
+In the twentieth century, people inspired by this teaching built a political
+movement that joined faith and democracy. It rebuilt nations after war, founded
+welfare states, gave workers seats on company boards, created the social market
+economy and defended human rights against the totalitarian ideologies of the
+age. Christian Democracy keeps its central conviction: politics exists to serve
+the human person and the common good.
 
-The idea that owners are stewards, holding property in trust for the common
-good, runs through both religious and civic traditions. In postwar France,
-Charles de Gaulle championed *participation*, giving workers a share in the
-running and profits of their companies, alongside a strong state that steered
-the economy in the national interest. Commonwealism's stewarded economy draws
-on both ideas.
+## The guilds
 
-## Cybernetics and Project Cybersyn
+Medieval guilds, associations of craftsmen and traders, kept standards of skill,
+trained apprentices and cared for their members and their families. Keystone's
+idea of national guilds draws on them.
 
-Commonweal's method comes from cybernetics, the science of how systems steer
+## Cybernetics
+
+Keystone's design comes from cybernetics, the science of how systems steer
 themselves through feedback. In *Brain of the Firm* (1972) the British
-cybernetician Stafford Beer set out the Viable System Model: the five parts any
-self-governing system needs.
-
-From 1971 to 1973 Beer applied it in Chile, in Project Cybersyn, with Fernando
-Flores and a team of Chilean engineers and designers. It had four parts:
-
-- **Cybernet**, a network of telex machines that carried daily production
-  figures from factories to Santiago.
-- **Cyberstride**, software that flagged unusual changes early.
-- **CHECO**, a simulator of the economy.
-- **The Opsroom**, an operations room where decisions could be taken quickly
-  with the facts in view.
-
-In October 1972, during a strike by truck owners, the network helped keep food
-and fuel moving with a fraction of the usual trucks. The project ended with the
-military coup of 11 September 1973.
-
-Commonweal is not a revival of that government's politics. It takes Cybersyn's
-lasting technical lessons: shared, current information lets a nation
-coordinate itself; problems are best caught early, by the people closest to
-them; and a small team can do a great deal with little.
+cybernetician Stafford Beer set out the **Viable System Model**: the five parts
+any self-governing system needs, nested so that every whole is made of smaller
+wholes. That fits a nation of towns within districts within a Nation, and it
+gives subsidiarity a working design. Keystone takes two lessons from Beer: shared,
+current information lets a nation coordinate itself, and problems are best
+caught early, by the people closest to them.
 
 ## Open source
 
 In 1983 Richard Stallman launched the GNU project to build an operating system
-that anyone could use, study, change and share. That free software movement,
-and the open standards that let the internet's machines all talk to each
-other, show how technology can belong to everyone. Commonweal is free software
-for the same reason.
+that anyone could use, study, change and share. That free software movement, and
+the open standards that let the internet's machines talk to each other, show how
+technology can belong to everyone. Keystone is free software for the same reason.
 
-## Lessons Commonweal carries forward
+## Lessons Keystone carries forward
 
-1. **The common good is the measure.** Every institution, the state included,
-   is judged by how well it serves the whole people.
-2. **Mutual obligation.** The strong owe the weak, and everyone owes something
-   to the nation that raised them.
+1. **The person comes first.** Every institution, the state included, exists for
+   persons and families.
+2. **The common good is the measure.** Every law and every system is judged by
+   whether everyone can flourish, together.
 3. **Feedback beats guesswork.** A nation that can see itself clearly can govern
    itself well.
 4. **Power must stay accountable.** Records and systems can be captured and
@@ -98,8 +85,10 @@ for the same reason.
 
 ## Further reading
 
-- Stafford Beer, *Brain of the Firm* (1972; second edition 1981).
-- Eden Medina, *Cybernetic Revolutionaries: Technology and Politics in
-  Allende's Chile* (2011).
-- Léon Bourgeois, *Solidarité* (1896).
 - Leo XIII, *Rerum Novarum* (1891).
+- Pius XI, *Quadragesimo Anno* (1931).
+- Second Vatican Council, *Dignitatis Humanae* (1965).
+- John Paul II, *Centesimus Annus* (1991).
+- Pontifical Council for Justice and Peace, *Compendium of the Social Doctrine of
+  the Church* (2004).
+- Stafford Beer, *Brain of the Firm* (1972; second edition 1981).

@@ -1,6 +1,6 @@
 # Memory
 
-Commonweal's memory is a folder of plain Markdown files. Anyone can read it, and
+Keystone's memory is a folder of plain Markdown files. Anyone can read it, and
 because it lives in git, every change to it is recorded. There is no hidden
 database behind it.
 
@@ -12,12 +12,12 @@ every conversation. The memories themselves live in the folders below.
 | Folder | `type` | What it holds |
 |---|---|---|
 | `collective/` | `collective` | Knowledge for everyone: how-tos, lessons learned, references, technology. The commons. |
-| `commonwealths/` | `commonwealth` | One file per commonwealth (neighbourhood, town, city or region): its level, council, powers and traditions. From its council's public charter. |
+| `places/` | `place` | One file per town or district: its level, council, powers and traditions. From its council's public charter. |
 | `communities/` | `community` | One file per community or group that has joined: what it does, how to reach it, what it shares. Written with the group's agreement. |
 | `resources/` | `offer` or `need` | Things people have to share and things people need: tools, space, food, skills, time. |
-| `decisions/` | `decision` | Decisions groups have made through Commonweal, with who decided and how. |
+| `decisions/` | `decision` | Decisions groups have made through Keystone, with who decided and how. |
 | `people/` | `person` | Only with the person's explicit consent: how they want to be reached and what they have chosen to share. |
-| `system/` | `system` | Commonweal's notes about its own operation: lessons, mistakes and corrections. |
+| `system/` | `system` | Keystone's notes about its own operation: lessons, mistakes and corrections. |
 
 ## File format
 
@@ -30,7 +30,7 @@ from [_templates/](_templates/).
 name: seed-library-oakland
 description: Free seed library at the Fruitvale branch, open Saturdays
 type: offer
-source: Told to Commonweal by the Fruitvale garden collective
+source: Told to Keystone by the Fruitvale garden collective
 recorded: 2026-10-28
 consent: The collective agreed to list this publicly
 expires: 2027-04-28
