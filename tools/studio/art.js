@@ -407,7 +407,7 @@
       await centreText(S, 'FOUNDED IN ARIZONA', 456, 2, st[2]);
       out = out.concat(await save(S, 'logo/' + st[0], [{ scale: 2, suffix: '-1024' }]));
     }
-    // link preview for christianunion.xyz, 1200x630
+    // link preview for christianunion.party, 1200x630
     S = await sprite(240, 126, 'Christian Union Party link preview');
     await bg(S, P.ink);
     await sunrise(S, 120, 126 * 1.6, 126, [P.night, '#2a0c0f', P.wine, P.deep]);

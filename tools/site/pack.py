@@ -14,7 +14,7 @@ import shutil
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 A = os.path.join(ROOT, "assets")
-SITE = "ChristianUnion.xyz"
+SITE = "ChristianUnion.party"
 TAGS = "#ChristianDemocracy #CommonGood #Keystone #StoneByStone #RockMusic #OriginalMusic"
 
 

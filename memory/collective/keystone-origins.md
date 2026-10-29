@@ -16,7 +16,7 @@ teaching. Its full statement is
 The project began on 2026-10-28 under the name Cybersyn, was renamed Commonweal
 the same day, and became Keystone, carrying Christian Unionism, on 2026-10-29.
 Its design still comes from Stafford Beer's cybernetics. It will run on the
-Railway platform, and its public home is ChristianUnion.xyz.
+Railway platform, and its public home is ChristianUnion.party.
 
 The traditions behind it are in [identity/history.md](../../identity/history.md).
 

@@ -58,7 +58,7 @@ A round arch of red stones held together by one gold keystone, with a gold sun r
 The name is written **KEYSTONE** in the wordmark and **Keystone** in running text. The philosophy is
 **Christian Unionism**, and its followers are **Christian Unionists**. The tagline is
 **Christian Unionism for all.** The motto is **The common good, built stone by stone.** The website is
-**ChristianUnion.xyz**.
+**ChristianUnion.party**.
 
 ## Colour
 

@@ -22,7 +22,7 @@ as plain files. This file is for agents and people **editing** the brain. Keysto
 - `assets/`: the Keystone emblem, banners, site art, icons, the Guild typeface and the soundtrack. Start at
   `assets/BRAND.md`. Editable sources are in `assets/src/` (`.asprite.json` for Vigil Sprite,
   `.song.json` for Vigil Box).
-- `site/`: the ChristianUnion.xyz website (static HTML, CSS and JavaScript).
+- `site/`: the ChristianUnion.party website (static HTML, CSS and JavaScript).
 - `tools/studio/`: regenerates the art (Vigil Sprite) and music (Vigil Box); see its README.
 - `tools/font/`: Guild's glyphs (`guild-glyphs.json`) and its TTF/WOFF builder.
 

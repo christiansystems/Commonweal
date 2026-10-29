@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the media for ChristianUnion.xyz, the Christian Union Party's website.
+"""Build the media for ChristianUnion.party, the Christian Union Party's website.
 
 Copies the soundtrack, covers, logos, icons and the Guild font from assets/ into site/media/, writes the album's
 track list as site/media/album.json, and turns THE-CHRISTIAN-UNIONIST-MANIFESTO.md into an HTML fragment

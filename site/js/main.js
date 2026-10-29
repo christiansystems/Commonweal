@@ -1,4 +1,4 @@
-/* ChristianUnion.xyz: the entry gate, the music player and its visualizers, the moving backgrounds, the
+/* ChristianUnion.party: the entry gate, the music player and its visualizers, the moving backgrounds, the
    arches built stone by stone, scroll reveals and the manifesto reader. No libraries. */
 (function () {
   'use strict';

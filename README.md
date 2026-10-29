@@ -18,7 +18,7 @@ connect the state's systems so government works as one. It is pro-AI and anti-sl
 This repository is Keystone's brain: its identity, principles, memory, skills and governance, all in plain text
 that anyone can read and the people can change. It also holds Keystone's look and sound: the Keystone emblem,
 the Guild typeface and the thirteen-track rock soundtrack *Stone by Stone*, made with Vigil Sprite and Vigil Box.
-Its public home is [ChristianUnion.xyz](https://christianunion.xyz), whose source is in [site/](site/).
+Its public home is [ChristianUnion.party](https://christianunion.party), whose source is in [site/](site/).
 
 ## Start here
 
@@ -36,7 +36,7 @@ Its public home is [ChristianUnion.xyz](https://christianunion.xyz), whose sourc
 - [LICENSING.md](LICENSING.md): the Keystone License, its scope and earlier permissions
 - [assets/BRAND.md](assets/BRAND.md): the emblem, colours, typeface, banners and site art
 - [assets/music/](assets/music/README.md): *Stone by Stone*, the official soundtrack
-- [site/](site/): the ChristianUnion.xyz website
+- [site/](site/): the ChristianUnion.party website
 
 ## Status
 
