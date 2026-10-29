@@ -312,6 +312,103 @@
     return CY.save(S, 'social/facebook-cover', [{ scale: 4, suffix: '-1640x624' }]);
   };
 
+  // ---------------------------------------------------------------- the album release
+  // Music and titles only. Before release the arch stands with no sun in it; on release day the sun has risen.
+  async function keystone(S, cx, cy, w, h) { // the keystone on its own: flared, gold, bevelled, with its cream node
+    var t = Math.round(w / 2), b = Math.round(w * 0.34), top = Math.round(cy - h / 2), bot = top + h;
+    await poly(S, [[cx - b, bot], [cx - t, top], [cx, top], [cx, bot]], P.goldLight);
+    await poly(S, [[cx, bot], [cx, top], [cx + t, top], [cx + b, bot]], P.gold);
+    await disc(S, cx, Math.round(top + h * 0.36), Math.max(2, Math.round(w * 0.07)), P.cream);
+  }
+  function len(t) { return Math.floor(t.seconds / 60) + ':' + ('0' + Math.round(t.seconds % 60)).slice(-2); }
+  JOBS.release = async function () {
+    var album = await (await fetch('/assets/music/album.json')).json(), out = [], S, y, base = 'social/release/';
+    // teaser 1, 1080x1080: only the keystone
+    S = await CY.sprite(270, 270, 'Release teaser: the keystone');
+    await bg(S, P.ink);
+    await stars(S, 0, 0, 270, 270, 70, 2201);
+    // the arch it will hold, not built yet: a faint outline
+    for (var r of [84, 52]) await arcLine(S, 135, 176, r, 0, 180, 1, P.wine);
+    await rect(S, 51, 176, 1, 40, P.wine); await rect(S, 83, 176, 1, 40, P.wine);
+    await rect(S, 187, 176, 1, 40, P.wine); await rect(S, 219, 176, 1, 40, P.wine);
+    await keystone(S, 135, 104, 40, 44);
+    await centre(S, 'COMMONWEAL', 135, 236, 1, P.red, { bold: true });
+    out = out.concat(await CY.save(S, base + 'teaser-1-keystone', [{ scale: 4, suffix: '-1080' }]));
+    // teaser 2, 1080x1080 and 1080x1920: the arch is built, but the sun hasn't risen
+    S = await CY.sprite(270, 270, 'Release teaser: before the sun');
+    await bg(S, P.ink);
+    await sunrise(S, 135, 270 + 150, 190, DAWN.slice(0, 4));
+    await stars(S, 0, 0, 270, 150, 50, 2202);
+    await CY.mark(S, 135, 100, 120, 'color', { noSun: true });
+    await centre(S, 'MUSIC FOR THE COMMON GOOD', 135, 196, 1, P.gold);
+    await centre(S, 'COMING SOON', 135, 214, 2, P.cream, { bold: true });
+    out = out.concat(await CY.save(S, base + 'teaser-2-coming-soon', [{ scale: 4, suffix: '-1080' }]));
+    S = await CY.sprite(270, 480, 'Release teaser: before the sun, story');
+    await bg(S, P.ink);
+    await sunrise(S, 135, 480 + 160, 220, DAWN.slice(0, 4));
+    await stars(S, 0, 0, 270, 300, 90, 2203);
+    await CY.mark(S, 135, 200, 150, 'color', { noSun: true });
+    await centre(S, 'MUSIC FOR THE', 135, 290, 2, P.cream);
+    await centre(S, 'COMMON GOOD', 135, 312, 3, P.cream, { bold: true });
+    await centre(S, 'COMING SOON', 135, 352, 2, P.gold, { bold: true });
+    out = out.concat(await CY.save(S, base + 'teaser-2-coming-soon-story', [{ scale: 4, suffix: '-1080x1920' }]));
+    // teaser 3, 1080x1350: the track list, every title hidden but the first; you can count the letters
+    S = await CY.sprite(216, 270, 'Release teaser: hidden track list');
+    await bg(S, P.ink);
+    await sunrise(S, 108, 330, 150, DAWN.slice(0, 4));
+    await CY.mark(S, 108, 34, 46, 'color', { noSun: true });
+    await centre(S, 'MUSIC FOR THE', 108, 64, 1, P.gold);
+    await centre(S, 'COMMON GOOD', 108, 76, 2, P.cream, { bold: true });
+    await centre(S, 'COMING SOON', 108, 98, 1, P.paper);
+    y = 120;
+    for (var t of album.tracks) {
+      await text(S, String(t.n), 24, y, 1, P.gold);
+      var title = t.title.toUpperCase();
+      if (t.n === 1) await text(S, title, 36, y, 1, P.cream, { bold: true });
+      else for (var w of title.split(' ')) { // one dark block per word, as wide as the word
+        var x0 = 36 + textWidth(title.slice(0, title.indexOf(w)), 1, { bold: true });
+        await rect(S, x0, y - 1, textWidth(w, 1, { bold: true }) - 1, 9, P.wine);
+      }
+      await text(S, len(t), 192 - textWidth(len(t), 1), y, 1, P.red);
+      await rect(S, 24, y + 11, 168, 1, P.wine);
+      y += 16;
+    }
+    await centre(S, 'EIGHT TRACKS · 16 MINUTES', 108, 252, 1, P.gold);
+    out = out.concat(await CY.save(S, base + 'teaser-3-hidden-track-list', [{ scale: 5, suffix: '-1080x1350' }]));
+    // release day, 1920x1080: the sun has risen
+    S = await CY.sprite(480, 270, 'Release day, wide');
+    await background(S, 480, 270, 2204, { cx: 250, cy: 135, rx: 290, ry: 170 });
+    await CY.mark(S, 128, 128, 170, 'color');
+    var tx = 246, tu = fit('COMMON GOOD', 480 - tx - 16, 3, { bold: true });
+    await text(S, 'OUT NOW', tx, 70, 2, P.gold, { bold: true });
+    await text(S, 'MUSIC FOR THE', tx, 100, 2, P.cream);
+    await text(S, 'COMMON GOOD', tx, 122, tu, P.cream, { bold: true });
+    await text(S, 'COMMONWEAL', tx, 122 + 7 * tu + 18, 2, P.red, { bold: true });
+    await text(S, '8 TRACKS · 16 MINUTES · FREE TO SHARE', tx, 122 + 7 * tu + 46, 1, P.paper);
+    out = out.concat(await CY.save(S, base + 'release-day-wide', [{ scale: 4, suffix: '-1920x1080' }]));
+    // release day story with room for a link sticker, 1080x1920
+    S = await CY.sprite(270, 480, 'Release day, story with link');
+    await background(S, 270, 480, 2205, { cx: 135, cy: 210, rx: 170, ry: 230 });
+    await centre(S, 'NEW MUSIC', 135, 66, 2, P.gold, { bold: true });
+    await CY.mark(S, 135, 160, 140, 'color');
+    await centre(S, 'MUSIC FOR THE', 135, 242, 2, P.cream);
+    await centre(S, 'COMMON GOOD', 135, 264, 3, P.cream, { bold: true });
+    await centre(S, 'COMMONWEAL', 135, 300, 1, P.red, { bold: true });
+    await centre(S, 'TAP THE LINK TO LISTEN', 135, 336, 1, P.gold);
+    out = out.concat(await CY.save(S, base + 'release-day-story-link', [{ scale: 4, suffix: '-1080x1920' }]));
+    // release-week header, 1500x500 (X, Mastodon) and 3000x1000 (Bluesky)
+    S = await CY.sprite(375, 125, 'Release header');
+    await bg(S, P.ink);
+    await sunrise(S, 188, 125 * 1.7, 150, DAWN.slice(0, 5));
+    await CY.network(S, 0, 0, 375, 125, { seed: 2206, step: 13, clear: { cx: 188, cy: 62, rx: 150, ry: 80 }, people: 0.1, person: P.gold });
+    await T(S, 'new_layer', { name: 'Title' });
+    await CY.mark(S, 188, 38, 46, 'color');
+    await centre(S, 'MUSIC FOR THE COMMON GOOD', 188, 70, 2, P.cream, { bold: true });
+    await centre(S, 'OUT NOW', 188, 92, 1, P.gold);
+    out = out.concat(await CY.save(S, base + 'release-header', [{ scale: 4, suffix: '-1500x500' }, { scale: 8, suffix: '-3000x1000' }]));
+    return out;
+  };
+
   async function make(name) {
     await root.CYFont.ready;
     if (name === 'all') { var all = []; for (var k in JOBS) all = all.concat(await JOBS[k]()); return all; }
